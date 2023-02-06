@@ -17,4 +17,4 @@ class ViewController: UIViewController {
 
 }
 
-// Привет от Германа
+// fd
