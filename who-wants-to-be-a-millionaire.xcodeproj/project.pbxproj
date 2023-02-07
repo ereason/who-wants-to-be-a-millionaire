@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0285E53B29901F3000032476 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0285E53A29901F3000032476 /* questions.json */; };
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
+		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
+		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
 		5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */; };
 		5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */; };
 		5EFF0C32298FD0F000A5F125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C31298FD0F000A5F125 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		0285E53A29901F3000032476 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
+		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
 		5EFF0C2A298FD0F000A5F125 /* who-wants-to-be-a-millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "who-wants-to-be-a-millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		02DAA51A29916C13004EA8FB /* Lose */ = {
+			isa = PBXGroup;
+			children = (
+				02DAA51B29916C2F004EA8FB /* LoseViewController.swift */,
+				02DAA51C29916C2F004EA8FB /* LoseViewController.xib */,
+			);
+			path = Lose;
+			sourceTree = "<group>";
+		};
 		5EB7872A298FD3360086D2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				02DAA51A29916C13004EA8FB /* Lose */,
 				5EFF0C31298FD0F000A5F125 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -159,6 +173,7 @@
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				5EFF0C35298FD0F000A5F125 /* Main.storyboard in Resources */,
+				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +187,7 @@
 				5EFF0C32298FD0F000A5F125 /* ViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
+				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

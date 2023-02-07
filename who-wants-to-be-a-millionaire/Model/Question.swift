@@ -12,9 +12,16 @@ struct Question: Decodable {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
-                let questions = try decoder.decode([Question].self,
+                var questions = try decoder.decode([Question].self,
                                                    from: data)
-                return questions
+                questions.shuffle()
+                var fifteen: [Question] = []
+                for i in 1...15 {
+                    if let question = questions.first(where: { $0.level == i }) {
+                        fifteen.append(question)
+                    }
+                }
+                return fifteen
             } catch {
                 print("error:\(error)")
             }
