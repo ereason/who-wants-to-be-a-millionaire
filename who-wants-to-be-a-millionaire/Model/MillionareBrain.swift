@@ -3,6 +3,10 @@ import Foundation
 struct MillionareBrain {
     var questions = Question.questions()
 
+    // помощь зала
+    
+    // помощь друга
+    
     private var score = 0
     private var questionNumber = 0
     
