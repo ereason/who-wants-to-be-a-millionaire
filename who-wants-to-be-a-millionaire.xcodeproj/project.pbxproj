@@ -12,6 +12,8 @@
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
 		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
 		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
+		04CE53A02992C15000EED0CD /* rulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE539E2992C15000EED0CD /* rulesViewController.swift */; };
+		04CE53A12992C15000EED0CD /* rulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE539F2992C15000EED0CD /* rulesViewController.xib */; };
 		5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */; };
 		5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */; };
 		5EFF0C32298FD0F000A5F125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C31298FD0F000A5F125 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
+		04CE539E2992C15000EED0CD /* rulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rulesViewController.swift; sourceTree = "<group>"; };
+		04CE539F2992C15000EED0CD /* rulesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = rulesViewController.xib; sourceTree = "<group>"; };
 		5EFF0C2A298FD0F000A5F125 /* who-wants-to-be-a-millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "who-wants-to-be-a-millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 			path = Lose;
 			sourceTree = "<group>";
 		};
+		04CE539D2992C0F100EED0CD /* rules */ = {
+			isa = PBXGroup;
+			children = (
+				04CE539E2992C15000EED0CD /* rulesViewController.swift */,
+				04CE539F2992C15000EED0CD /* rulesViewController.xib */,
+			);
+			path = rules;
+			sourceTree = "<group>";
+		};
 		5EB7872A298FD3360086D2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04CE539D2992C0F100EED0CD /* rules */,
 				02DAA51A29916C13004EA8FB /* Lose */,
 				5EFF0C31298FD0F000A5F125 /* ViewController.swift */,
 			);
@@ -184,6 +198,7 @@
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				5EFF0C35298FD0F000A5F125 /* Main.storyboard in Resources */,
 				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
+				04CE53A12992C15000EED0CD /* rulesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +215,7 @@
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
+				04CE53A02992C15000EED0CD /* rulesViewController.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -330,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
