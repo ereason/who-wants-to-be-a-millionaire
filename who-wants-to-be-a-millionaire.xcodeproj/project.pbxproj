@@ -18,6 +18,8 @@
 		5EFF0C35298FD0F000A5F125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C33298FD0F000A5F125 /* Main.storyboard */; };
 		5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C36298FD0F200A5F125 /* Assets.xcassets */; };
 		5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */; };
+		C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* RewardsScreenViewController.swift */; };
+		C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* RewardsScreenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		5EFF0C36298FD0F200A5F125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EFF0C39298FD0F200A5F125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EFF0C3B298FD0F200A5F125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43E8F7029916F700066453B /* RewardsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsScreenViewController.swift; sourceTree = "<group>"; };
+		C43E8F7129916F700066453B /* RewardsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				5EFF0C36298FD0F200A5F125 /* Assets.xcassets */,
 				5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */,
 				5EFF0C3B298FD0F200A5F125 /* Info.plist */,
+				C43E8F7029916F700066453B /* RewardsScreenViewController.swift */,
+				C43E8F7129916F700066453B /* RewardsScreenViewController.xib */,
 			);
 			path = "who-wants-to-be-a-millionaire";
 			sourceTree = "<group>";
@@ -172,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
@@ -188,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EFF0C32298FD0F000A5F125 /* ViewController.swift in Sources */,
+				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
