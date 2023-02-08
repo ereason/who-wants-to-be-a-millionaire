@@ -73,6 +73,24 @@ to be a Millionaire </string>
                     <nil key="highlightedColor"/>
                     <size key="shadowOffset" width="0.0" height="0.0"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-yg-zwk">
+                    <rect key="frame" x="119" y="562" width="134" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="правила игры"/>
+                    <connections>
+                        <action selector="rulesButtomTapped:" destination="-1" eventType="touchUpInside" id="B6c-VK-Zsq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNK-ar-wni">
+                    <rect key="frame" x="166" y="652" width="62" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                    <connections>
+                        <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="riW-BY-Crd"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,7 +111,7 @@ to be a Millionaire </string>
                 <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="d60-Ph-gII" secondAttribute="centerX" id="quS-4z-ge7"/>
                 <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="74a-o5-Gho" secondAttribute="centerX" id="tqX-l3-8Ab"/>
             </constraints>
-            <point key="canvasLocation" x="263.768115942029" y="9.7826086956521738"/>
+            <point key="canvasLocation" x="263.35877862595419" y="9.1549295774647899"/>
         </view>
     </objects>
     <resources>

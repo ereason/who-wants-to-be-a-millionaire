@@ -7,7 +7,7 @@
 
 import UIKit
 
-class rulesViewController: UIViewController {
+class RulesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +28,6 @@ class rulesViewController: UIViewController {
     // MARK: Button
     
     @IBAction func cancelBut(_ sender: UIButton) {
+        dismiss(animated: true)
     }
 }
