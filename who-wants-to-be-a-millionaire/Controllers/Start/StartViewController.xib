@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-u1-qa6">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74a-o5-Gho">
+                    <rect key="frame" x="148.33333333333334" y="361" width="96.666666666666657" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ET-u3-Lbm">
+                    <rect key="frame" x="90.666666666666671" y="605.66666666666663" width="211.66666666666663" height="38.333333333333371"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Правила  игры">
+                            <attributes>
+                                <color key="NSColor" systemColor="systemGreenColor"/>
+                                <font key="NSFont" metaFont="system" size="32"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <integer key="NSUnderline" value="1"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-K9-b0M">
+                    <rect key="frame" x="121" y="687" width="151" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="81I-Gx-kdo"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Start game">
+                            <attributes>
+                                <color key="NSColor" systemColor="systemGreenColor"/>
+                                <font key="NSFont" metaFont="system" size="32"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                <integer key="NSUnderline" value="1"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ux-hqX">
+                    <rect key="frame" x="96" y="119" width="201" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="VlQ-Jd-ZYz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d60-Ph-gII">
+                    <rect key="frame" x="59" y="417.33333333333331" width="275.33333333333331" height="81.333333333333314"/>
+                    <string key="text">to Who  Wants 
+to be a Millionaire </string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yqD-K9-b0M" firstAttribute="top" secondItem="7ET-u3-Lbm" secondAttribute="bottom" constant="43" id="7xf-aC-cvq"/>
+                <constraint firstItem="7ET-u3-Lbm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DdB-VB-X2B"/>
+                <constraint firstItem="74a-o5-Gho" firstAttribute="top" secondItem="kbM-ux-hqX" secondAttribute="bottom" constant="17" id="EAV-OK-CoJ"/>
+                <constraint firstAttribute="bottom" secondItem="8Sc-u1-qa6" secondAttribute="bottom" id="Epo-rU-fSG"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="Irw-g1-Mc6"/>
+                <constraint firstItem="d60-Ph-gII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rfc-bu-XLZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yqD-K9-b0M" secondAttribute="bottom" constant="81" id="V6w-fu-crw"/>
+                <constraint firstItem="8Sc-u1-qa6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VDe-Sg-LZd"/>
+                <constraint firstItem="yqD-K9-b0M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XbX-Yy-mAC"/>
+                <constraint firstItem="7ET-u3-Lbm" firstAttribute="top" secondItem="d60-Ph-gII" secondAttribute="bottom" constant="107" id="a3t-m5-9QP"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g0e-P3-Tz7"/>
+                <constraint firstItem="8Sc-u1-qa6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="huX-kx-8Di"/>
+                <constraint firstItem="8Sc-u1-qa6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="krK-3P-Y6C"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="d60-Ph-gII" secondAttribute="centerX" id="quS-4z-ge7"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="74a-o5-Gho" secondAttribute="centerX" id="tqX-l3-8Ab"/>
+            </constraints>
+            <point key="canvasLocation" x="263.768115942029" y="9.7826086956521738"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="414" height="736"/>
+        <image name="logo" width="201" height="201"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
