@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="rulesViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="D7b-Cg-cuo">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2E-wg-P3C">
+                    <rect key="frame" x="54.666666666666657" y="753" width="284" height="55"/>
+                    <color key="tintColor" systemColor="systemBlueColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Cancel" cornerStyle="medium">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="34"/>
+                        <color key="baseBackgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelBut:" destination="-1" eventType="touchUpInside" id="JBF-PQ-jBz"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y2x-he-HaP">
+                    <rect key="frame" x="10" y="69" width="373" height="674"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <mutableString key="text">Правила игры “Кто хочет стать миллионером?”
+
+Игра Кто хочет стать миллионером? - это конкурс викторина, в котором участники должны правильно ответить на ряд вопросов с несколькими вариантами ответов, чтобы перейти на следующий уровень. Всего 15 вопросов, каждый вопрос стоит определенной суммы денег, участники не имеют никаких временных ограничений для предоставления ответа. Участники также получают три вида подсказок, чтобы помочь себе, если они застряли на конкретном вопросе.
+
+Вопросы “Кто хочет стать миллионером?” структурированы в соответствии с пятью различными уровнями, причем уровень сложности постепенно увеличивается. Каждый уровень содержит три вопроса.
+
+Вопросы, сгруппированные на одном уровне, будут иметь одинаковую сложность. Например: вопросы 1-3 составляют первый уровень и будут содержать самые простые вопросы. Второй уровень (вопросы 4–6) будет несколько сложнее, за ним следует третий уровень (вопросы 7–9). Четвертый уровень (вопросы 10–12) будет состоять из действительно сложных вопросов, за которыми следует пятый и последний уровень (вопросы 13–15), имеющий самые сложные вопросы в игре.
+
+Важно помнить, что вопросы, составляющие каждый уровень, не обязательно будут относиться к одним и тем же или даже сходным темам, но их общий уровень сложности будет одинаковым. Немаловажно, что уровни вопросов не следует путать с «несгораемыми суммами» или структурой ценностей вопросов, что они собой являют объясняется ниже.
+
+Важно помнить, что вопросы, составляющие каждый уровень, не обязательно будут относиться к одним и тем же или даже сходным темам, но их общий уровень сложности будет одинаковым. Немаловажно, что уровни вопросов не следует путать с «несгораемыми суммами» или структурой ценностей вопросов, что они собой являют объясняется ниже.
+
+Вопрос 1 100 руб.
+Вопрос 2 200 руб.
+Вопрос 3 300 руб.
+Вопрос 4 500 руб.
+Вопрос 5 - 1000 руб. Несгораемая сумма.
+
+Если участники неправильно отвечают на последний вопрос вопрос, то они уходят ни с чем. Если на этот вопрос дан правильный ответ, участникам гарантируется 1000 рублей, даже если дадут неверный ответ до достижения следующей несгораемой суммы в десятом вопросе.
+
+Вопрос 6 2000 руб.
+Вопрос 7 4000 руб.
+Вопрос 8 8000 руб.
+Вопрос 9 16 000 руб.
+Вопрос 10 - 32 000 руб. Несгораемая сумма.
+
+Если участники неправильно ответят на этот вопрос, они уйдут с 1000 рублей. Если на этот вопрос ответили верно, игрокам гарантируется 32 000 рублей, даже если дадут неверный ответ до достижения вопроса 15.
+
+Вопрос 11 64 000 руб.
+Вопрос 12 125 000 руб.
+Вопрос 13 250 000 руб.
+Вопрос 14 500 000 руб.
+Вопрос 15 - 1 000 000 руб.
+
+Подсказки
+
+Участникам разрешается применить три подсказки, которые они могут использовать в любой момент викторины. Каждая из подсказок может быть использована только один раз.
+
+50/50 - исключает два неправильных ответа из множественного выбора, оставляя участнику только один правильный и один неправильный вариант. Это означает, что у него есть шанс 50/50.
+
+Задать вопрос аудитории - залу задают тот же вопрос, что и участнику, и проводится быстрый опрос, чтобы показать их ответы. На диаграмме показывается явное преимущество определенного варианта, эта подсказка может быть чрезвычайно полезной. Участнику дается возможность согласиться с результатами, полученными от аудитории.
+
+Позвоните другу - участникам разрешается сделать 30-секундный звонок другу или члену семьи и спросить, знают ли они ответ на вопрос.
+
+Игра для интеллектуалов “Кто хочет стать миллионером?” доступна в онлайн режиме и создана энтузиастами, которые ценят всю силу умственного развития. Дерзайте и попробуйте выиграть свой первый миллион рублей.</mutableString>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="D7b-Cg-cuo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2k4-Es-QRN"/>
+                <constraint firstItem="u2E-wg-P3C" firstAttribute="width" secondItem="D7b-Cg-cuo" secondAttribute="width" multiplier="0.722646" id="F88-lc-pyJ"/>
+                <constraint firstItem="u2E-wg-P3C" firstAttribute="top" secondItem="y2x-he-HaP" secondAttribute="bottom" constant="10" id="GYC-k9-Jbv"/>
+                <constraint firstItem="y2x-he-HaP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="J6E-Yi-JEV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y2x-he-HaP" secondAttribute="trailing" constant="10" id="KQU-7V-NEY"/>
+                <constraint firstItem="u2E-wg-P3C" firstAttribute="height" secondItem="D7b-Cg-cuo" secondAttribute="height" multiplier="0.064554" id="QKe-db-t7Y"/>
+                <constraint firstItem="D7b-Cg-cuo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QiG-e7-l3l"/>
+                <constraint firstAttribute="bottom" secondItem="D7b-Cg-cuo" secondAttribute="bottom" id="bio-6W-2HD"/>
+                <constraint firstItem="D7b-Cg-cuo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iw1-Yx-8Cc"/>
+                <constraint firstItem="y2x-he-HaP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="nEA-kZ-nJA"/>
+                <constraint firstItem="u2E-wg-P3C" firstAttribute="centerX" secondItem="D7b-Cg-cuo" secondAttribute="centerX" id="non-0T-mYk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u2E-wg-P3C" secondAttribute="bottom" constant="10" id="wwk-ma-bCc"/>
+            </constraints>
+            <point key="canvasLocation" x="46.564885496183201" y="13.380281690140846"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="414" height="736"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
