@@ -15,15 +15,15 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func rulesButtomTapped(_ sender: UIButton) {
+        let controller = RulesViewController(nibName: "RulesViewController", bundle: nil)
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true)
     }
-    */
-
+    
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        let controller = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
 }
