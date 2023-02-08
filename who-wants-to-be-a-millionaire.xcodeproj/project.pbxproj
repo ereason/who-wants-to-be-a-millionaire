@@ -87,6 +87,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C460E0F02993CD5F00757359 /* Rewards */,
 				8494DA6129928AC400AF1101 /* Start */,
 				02DAA51A29916C13004EA8FB /* Lose */,
 				5EFF0C31298FD0F000A5F125 /* ViewController.swift */,
@@ -122,8 +123,6 @@
 				5EFF0C36298FD0F200A5F125 /* Assets.xcassets */,
 				5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */,
 				5EFF0C3B298FD0F200A5F125 /* Info.plist */,
-				C43E8F7029916F700066453B /* RewardsScreenViewController.swift */,
-				C43E8F7129916F700066453B /* RewardsScreenViewController.xib */,
 			);
 			path = "who-wants-to-be-a-millionaire";
 			sourceTree = "<group>";
@@ -143,6 +142,15 @@
 				AAAD33EA29937C1E00CAA30C /* UIButton+Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C460E0F02993CD5F00757359 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				C43E8F7029916F700066453B /* RewardsScreenViewController.swift */,
+				C43E8F7129916F700066453B /* RewardsScreenViewController.xib */,
+			);
+			path = Rewards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
