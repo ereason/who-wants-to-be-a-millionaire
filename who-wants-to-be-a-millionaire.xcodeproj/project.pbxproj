@@ -20,6 +20,7 @@
 		5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */; };
 		8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494DA6229928B1800AF1101 /* StartViewController.swift */; };
 		8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494DA6329928B1800AF1101 /* StartViewController.xib */; };
+		AAAD33EB29937C1E00CAA30C /* UIButton+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD33EA29937C1E00CAA30C /* UIButton+Color.swift */; };
 		C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* RewardsScreenViewController.swift */; };
 		C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* RewardsScreenViewController.xib */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		5EFF0C3B298FD0F200A5F125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8494DA6229928B1800AF1101 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8494DA6329928B1800AF1101 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		AAAD33EA29937C1E00CAA30C /* UIButton+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Color.swift"; sourceTree = "<group>"; };
 		C43E8F7029916F700066453B /* RewardsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsScreenViewController.swift; sourceTree = "<group>"; };
 		C43E8F7129916F700066453B /* RewardsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 		5EFF0C2C298FD0F000A5F125 /* who-wants-to-be-a-millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				AAAD33E929937BF300CAA30C /* Extensions */,
 				0285E53929901F2600032476 /* Model */,
 				5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */,
 				5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */,
@@ -132,6 +135,14 @@
 				8494DA6329928B1800AF1101 /* StartViewController.xib */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		AAAD33E929937BF300CAA30C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAAD33EA29937C1E00CAA30C /* UIButton+Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				5EFF0C32298FD0F000A5F125 /* ViewController.swift in Sources */,
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
 				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
+				AAAD33EB29937C1E00CAA30C /* UIButton+Color.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
