@@ -20,6 +20,8 @@
 		5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */; };
 		8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494DA6229928B1800AF1101 /* StartViewController.swift */; };
 		8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494DA6329928B1800AF1101 /* StartViewController.xib */; };
+		84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3405B2992CC290024130C /* QuestionsViewController.swift */; };
+		84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C3405C2992CC290024130C /* QuestionsViewController.xib */; };
 		C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* RewardsScreenViewController.swift */; };
 		C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* RewardsScreenViewController.xib */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		5EFF0C3B298FD0F200A5F125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8494DA6229928B1800AF1101 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8494DA6329928B1800AF1101 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		84C3405B2992CC290024130C /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		84C3405C2992CC290024130C /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 		C43E8F7029916F700066453B /* RewardsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsScreenViewController.swift; sourceTree = "<group>"; };
 		C43E8F7129916F700066453B /* RewardsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +89,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84C340592992CBF50024130C /* Questions */,
 				8494DA6129928AC400AF1101 /* Start */,
 				02DAA51A29916C13004EA8FB /* Lose */,
 				5EFF0C31298FD0F000A5F125 /* ViewController.swift */,
@@ -132,6 +137,15 @@
 				8494DA6329928B1800AF1101 /* StartViewController.xib */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		84C340592992CBF50024130C /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				84C3405B2992CC290024130C /* QuestionsViewController.swift */,
+				84C3405C2992CC290024130C /* QuestionsViewController.xib */,
+			);
+			path = Questions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,7 @@
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				5EFF0C35298FD0F000A5F125 /* Main.storyboard in Resources */,
+				84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */,
 				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +229,7 @@
 				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
+				84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
