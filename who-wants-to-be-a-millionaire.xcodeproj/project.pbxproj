@@ -12,6 +12,8 @@
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
 		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
 		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
+		048A08F12995204B00304FA7 /* GuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A08EF2995204B00304FA7 /* GuesViewController.swift */; };
+		048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048A08F02995204B00304FA7 /* GuesViewController.xib */; };
 		04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE539E2992C15000EED0CD /* RulesViewController.swift */; };
 		04CE53A12992C15000EED0CD /* RulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE539F2992C15000EED0CD /* RulesViewController.xib */; };
 		5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */; };
@@ -35,6 +37,8 @@
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
+		048A08EF2995204B00304FA7 /* GuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuesViewController.swift; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuesViewController.swift"; sourceTree = SOURCE_ROOT; };
+		048A08F02995204B00304FA7 /* GuesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GuesViewController.xib; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuesViewController.xib"; sourceTree = SOURCE_ROOT; };
 		04CE539E2992C15000EED0CD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		04CE539F2992C15000EED0CD /* RulesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesViewController.xib; sourceTree = "<group>"; };
 		5EFF0C2A298FD0F000A5F125 /* who-wants-to-be-a-millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "who-wants-to-be-a-millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,16 @@
 			path = Rules;
 			sourceTree = "<group>";
 		};
+		04D7759C29951F960077FA6E /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				048A08EF2995204B00304FA7 /* GuesViewController.swift */,
+				048A08F02995204B00304FA7 /* GuesViewController.xib */,
+			);
+			name = Guest;
+			path = Rules/Guest;
+			sourceTree = "<group>";
+		};
 		5EB7872A298FD3360086D2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +118,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04D7759C29951F960077FA6E /* Guest */,
 				04CE539D2992C0F100EED0CD /* Rules */,
 				C460E0F02993CD5F00757359 /* Rewards */,
 				84C340592992CBF50024130C /* Questions */,
@@ -251,6 +266,7 @@
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
+				048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */,
 				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
@@ -276,6 +292,7 @@
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */,
+				048A08F12995204B00304FA7 /* GuesViewController.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
