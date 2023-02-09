@@ -1,10 +1,3 @@
-//
-//  RewardsScreenViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Герман Кунин on 06.02.2023.
-//
-
 import UIKit
 
 class RewardsScreenViewController: UIViewController {

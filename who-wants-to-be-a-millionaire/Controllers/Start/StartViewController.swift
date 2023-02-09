@@ -1,10 +1,3 @@
-//
-//  StartViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Админ on 07.02.2023.
-//
-
 import UIKit
 
 class StartViewController: UIViewController {

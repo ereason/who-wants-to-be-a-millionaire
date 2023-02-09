@@ -2,12 +2,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var testButton: UIButton!
+    @IBOutlet weak var testButton: CustomButton!
     var questions = Question.questions()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testButton.answerButton()
+        testButton.setRedBackground()
         
         questions.forEach {
             print($0.level, $0.ask)

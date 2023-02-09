@@ -1,10 +1,3 @@
-//
-//  AnswerButton.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Alex F on 9.02.23.
-//
-
 import UIKit
 
 class CustomButton: UIButton {
