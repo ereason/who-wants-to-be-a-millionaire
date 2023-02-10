@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionsViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
+                <outlet property="A" destination="24k-62-cYE" id="fgn-g1-a09"/>
+                <outlet property="B" destination="iK8-SV-fcQ" id="GkN-eK-hke"/>
+                <outlet property="C" destination="TMB-Jz-v7o" id="NXl-Gp-0zX"/>
+                <outlet property="D" destination="WjT-lb-BZv" id="eXK-TX-Bbl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-4H-pUe">
-                    <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                    <rect key="frame" x="16" y="0.0" width="414" height="932"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-BZ-L6n">
                     <rect key="frame" x="18" y="78" width="66" height="110"/>
@@ -45,83 +49,6 @@ was invented in our life?</string>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfA-tX-cBy">
-                    <rect key="frame" x="0.0" y="220" width="393" height="358"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionButton" translatesAutoresizingMaskIntoConstraints="NO" id="MG4-Fx-uta" userLabel="optionD">
-                            <rect key="frame" x="25" y="254" width="340" height="72"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionButton" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-d2-Jpz" userLabel="optionB">
-                            <rect key="frame" x="25" y="100" width="340" height="72"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionButton" translatesAutoresizingMaskIntoConstraints="NO" id="EV1-7E-1it" userLabel="optionA">
-                            <rect key="frame" x="25" y="20" width="340" height="72"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" fixedFrame="YES" image="questionButton" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-kU-CSh" userLabel="optionC">
-                            <rect key="frame" x="25" y="182" width="340" height="72"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-YA-Iuf">
-                            <rect key="frame" x="42" y="35.999999999999886" width="16" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1956" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQB-3X-I4W">
-                            <rect key="frame" x="272" y="34.999999999999886" width="57" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56M-1Y-H7L">
-                            <rect key="frame" x="42" y="118" width="16" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1912" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5B-wP-bBy">
-                            <rect key="frame" x="272" y="118" width="52" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veT-Nx-ssd">
-                            <rect key="frame" x="42" y="197" width="17" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1942" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95H-xn-hiF">
-                            <rect key="frame" x="272" y="197" width="56" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmH-iA-7Q8">
-                            <rect key="frame" x="42" y="269" width="17" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1930" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oob-2d-U6v">
-                            <rect key="frame" x="272" y="269" width="57" height="29"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
                     <rect key="frame" x="0.0" y="614" width="393" height="125"/>
                     <subviews>
@@ -154,6 +81,40 @@ was invented in our life?</string>
                         </view>
                     </subviews>
                 </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ShO-FH-z1Q">
+                    <rect key="frame" x="0.0" y="208.66666666666666" width="393" height="405.33333333333337"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24k-62-cYE" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="101.33333333333333"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="qwe:" destination="-1" eventType="touchUpInside" id="yrQ-R1-mya"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK8-SV-fcQ" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="101.33333333333334" width="393" height="101.33333333333334"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="qwe:" destination="-1" eventType="touchUpInside" id="ABf-94-Put"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMB-Jz-v7o" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="202.66666666666666" width="393" height="101.33333333333334"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="qwe:" destination="-1" eventType="touchUpInside" id="mbK-EM-Ov2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjT-lb-BZv" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="304" width="393" height="101.33333333333331"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -162,26 +123,24 @@ was invented in our life?</string>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="j9B-a7-mor" secondAttribute="trailing" constant="17" id="2Oz-zT-3kp"/>
                 <constraint firstItem="j9B-a7-mor" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="28" id="6fr-G9-BzV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="j9B-a7-mor" secondAttribute="bottom" constant="622" id="7XP-QJ-ENJ"/>
-                <constraint firstItem="DiS-Ef-Qu8" firstAttribute="top" secondItem="xfA-tX-cBy" secondAttribute="bottom" constant="36" id="8ka-0I-ihK"/>
                 <constraint firstItem="fpp-op-GiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="122" id="8xZ-Pd-8Fj"/>
-                <constraint firstItem="xfA-tX-cBy" firstAttribute="top" secondItem="0Ag-JW-iLa" secondAttribute="bottom" constant="11.333333333333343" id="9Xy-Jh-sxf"/>
                 <constraint firstItem="0Ag-JW-iLa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="47" id="AJU-Qh-5FL"/>
-                <constraint firstItem="xfA-tX-cBy" firstAttribute="trailing" secondItem="DiS-Ef-Qu8" secondAttribute="trailing" id="Fg1-A5-vIV"/>
                 <constraint firstItem="0Ag-JW-iLa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="121" id="GTG-7X-rty"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fpp-op-GiO" secondAttribute="trailing" constant="8" id="Ikt-E7-RJX"/>
                 <constraint firstItem="DiS-Ef-Qu8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="K88-5f-Xmg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RrF-BZ-L6n" secondAttribute="trailing" constant="309" id="RBx-7O-bkp"/>
-                <constraint firstItem="xfA-tX-cBy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="e4H-Y0-aEA"/>
-                <constraint firstItem="xfA-tX-cBy" firstAttribute="leading" secondItem="TY9-4H-pUe" secondAttribute="leading" id="egi-Uz-pHM"/>
+                <constraint firstItem="ShO-FH-z1Q" firstAttribute="top" secondItem="0Ag-JW-iLa" secondAttribute="bottom" id="Va6-rC-axW"/>
+                <constraint firstItem="ShO-FH-z1Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZST-Mc-sby"/>
+                <constraint firstItem="DiS-Ef-Qu8" firstAttribute="top" secondItem="ShO-FH-z1Q" secondAttribute="bottom" id="hIN-Fj-Cee"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RrF-BZ-L6n" secondAttribute="bottom" constant="630" id="mJ9-um-iYZ"/>
                 <constraint firstItem="j9B-a7-mor" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="127" id="ocf-gu-ynJ"/>
                 <constraint firstItem="RrF-BZ-L6n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="paj-AJ-SoB"/>
                 <constraint firstAttribute="bottom" secondItem="TY9-4H-pUe" secondAttribute="bottom" constant="-80" id="tSP-VN-sgt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DiS-Ef-Qu8" secondAttribute="bottom" constant="79" id="uS5-Ga-FSO"/>
-                <constraint firstAttribute="bottom" secondItem="xfA-tX-cBy" secondAttribute="bottom" constant="274" id="umx-wS-kph"/>
                 <constraint firstAttribute="trailing" secondItem="DiS-Ef-Qu8" secondAttribute="trailing" id="upU-Sg-lch"/>
                 <constraint firstItem="TY9-4H-pUe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="v20-5e-PFR"/>
                 <constraint firstItem="RrF-BZ-L6n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="19" id="vVX-Rj-hWx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ShO-FH-z1Q" secondAttribute="trailing" id="yCy-X8-eSZ"/>
             </constraints>
             <point key="canvasLocation" x="-156.4885496183206" y="18.30985915492958"/>
         </view>
@@ -192,7 +151,6 @@ was invented in our life?</string>
         <image name="helpFifty" width="105" height="81"/>
         <image name="helpHall" width="105" height="85"/>
         <image name="logo" width="201" height="201"/>
-        <image name="questionButton" width="340" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

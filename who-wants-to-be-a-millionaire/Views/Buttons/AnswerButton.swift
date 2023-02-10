@@ -11,7 +11,10 @@ class CustomButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupButton()
+        DispatchQueue.main.async {
+            self.setupButton()
+        }
+       
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -57,7 +60,7 @@ class CustomButton: UIButton {
         
     }
     
-    private func styleColor() {
+    public func styleColor() {
         
         let colorStart = UIColor(red: 0.26, green: 0.46, blue: 0.55, alpha: 1).cgColor
         let colorCenter = UIColor(red: 0.125, green: 0.225, blue: 0.375, alpha: 1).cgColor
@@ -74,6 +77,7 @@ class CustomButton: UIButton {
         self.layer.cornerRadius = 16
         
         grad.frame = self.bounds
+        print(self.bounds)
         self.layer.addSublayer(grad)
         
     }

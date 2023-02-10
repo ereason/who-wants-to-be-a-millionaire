@@ -8,14 +8,23 @@
 import UIKit
 
 class QuestionsViewController: UIViewController {
-
+    @IBOutlet weak var B: CustomButton!
+    
+    @IBOutlet weak var D: CustomButton!
+    @IBOutlet weak var C: CustomButton!
+    @IBOutlet weak var A: CustomButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        A.setupButton()
     }
 
-
+    @IBAction func qwe(_ sender: CustomButton) {
+        
+        sender.setupButton()
+    }
+    
     /*
     // MARK: - Navigation
 
