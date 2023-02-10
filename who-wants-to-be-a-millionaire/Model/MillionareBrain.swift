@@ -1,39 +1,71 @@
 import Foundation
 
-struct MillionareBrain {
-    var questions = Question.questions()
-
-    private var questionNumber = 0
+class MillionareBrain {
+  
+    var questions:[Question]
+   
+    //TODO убать паблик
+    public var questionAnswers:[(answer:String,isCorrect:Bool)]
+    ///
     
-    var currentQuestion: String {
-        questions[questionNumber].ask
+    private var questionNumber:Int
+    private var score:Int
+    
+    public init(){
+        score = 0
+        questions = Question.questions()
+        questionNumber = 0
+        questionAnswers = []
+        self.randomizeAnswers()
     }
     
-    var currentProgress: Float {
-        questions.isEmpty ? 1 : (Float(questionNumber + 1)) / Float(questions.count)
+    
+    func GetScore() -> Int {
+        return score
     }
     
-    var currentAnswers: [String] {
-        var result = questions[questionNumber].wrongAnswers
-        result.append(questions[questionNumber].correctAnswer)
-        return result.shuffled()
+    func GetQuestionNumber() -> Int {
+        return questionNumber
     }
     
-    mutating func checkAnswer(_ answer: String) -> Bool {
-        if questions[questionNumber].correctAnswer == answer {
-            return true
-        } else {
-            return false
+    func GetCurrentQuestion()->String {
+        return questions[questionNumber].ask
+    }
+    
+    private func randomizeAnswers(){
+        questionAnswers.removeAll()
+        questions[questionNumber].wrongAnswers.forEach { str in
+            questionAnswers.append((str,false))
         }
+        questionAnswers.append((questions[questionNumber].correctAnswer,true))
+        questionAnswers.shuffle()
     }
     
-    mutating func nextQuestion() {
+    func NextQuestion() {
         if questionNumber < questions.count - 1 {
             questionNumber += 1
+            self.randomizeAnswers()
         }
+    
+        score+=100
     }
     
-    mutating func reset() {
-        questionNumber = 0
+    func CallHelp()->String{
+        return GetCorrectAnswerWithChanse(percent: 80)
+    }
+    
+    func AskHelp()->String{
+        return GetCorrectAnswerWithChanse(percent: 50)
+    }
+    
+    func GetCorrectAnswerWithChanse(percent: Int)->String{
+        if(Int.random(in: 1...100) < percent){
+            
+            return questions[questionNumber].correctAnswer
+            //questionAnswers.first(where: {$0.isCorrect})!.answer
+        }else{
+            return  questions[questionNumber].wrongAnswers.randomElement() ?? ""
+            //questionAnswers.filter{!$0.isCorrect}.randomElement()!.answer
+        }
     }
 }

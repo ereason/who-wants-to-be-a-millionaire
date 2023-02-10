@@ -9,7 +9,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardsScreenViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardsScreenViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="6Ab-jg-g3f" id="SHg-a9-z1m"/>
+                <outlet property="endButton" destination="JaS-lX-MEu" id="Nbk-cJ-aSd"/>
+                <outlet property="view" destination="cIm-DI-jCQ" id="64e-j5-LXB"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="cIm-DI-jCQ">
             <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
@@ -491,6 +497,9 @@
                                     <buttonConfiguration key="configuration" style="filled" title="Продолжить">
                                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="goNext:" destination="-1" eventType="touchUpInside" id="d2O-An-gko"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaS-lX-MEu">
                                     <rect key="frame" x="0.0" y="33" width="344" height="25"/>
@@ -501,6 +510,9 @@
                                     <buttonConfiguration key="configuration" style="filled" title="Забрать">
                                         <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="getMoney:" destination="-1" eventType="touchUpInside" id="VHA-2x-6Jy"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
