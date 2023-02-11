@@ -8,21 +8,20 @@
 import UIKit
 import AVFAudio
 
-class RewardsScreenViewController: UIViewController {
+class ProgressViewController: UIViewController {
     
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var endButton: UIButton!
     @IBOutlet var backgroundImages: [UIImageView]!
     
-    var quizBrain:MillionareBrain!
+    var quizBrain: MillionareBrain!
     
     var isEnd: Bool!
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               continueButton.isEnabled = !isEnd
-        
+        continueButton.isEnabled = !isEnd
         playSound(soundName: "bg2")
         setupView()
     }
@@ -35,23 +34,20 @@ class RewardsScreenViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: Any) {
-        print(quizBrain.GetQuestionNumber())
-        quizBrain.NextQuestion()
+        print(quizBrain.getQuestionNumber())
+        quizBrain.goToNextQuestion()
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func getMoney(_ sender: Any) {
-       
         let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         controller.navigationItem.hidesBackButton = true
         controller.quizBrain = self.quizBrain
         self.navigationController?.pushViewController(controller, animated: false)
         //present(controller, animated: true)
-    
+        
     }
-    
-    
     
     func playSound(soundName:String) {
         guard let path = Bundle.main.path(forResource: soundName, ofType:"mp3") else {
@@ -59,7 +55,7 @@ class RewardsScreenViewController: UIViewController {
             
         }
         let url = URL(fileURLWithPath: path)
-
+        
         do {
             player = try AVAudioPlayer(contentsOf: url)
             player?.play()
@@ -70,14 +66,14 @@ class RewardsScreenViewController: UIViewController {
     }
     
     func setupView() {
-        if quizBrain.GetQuestionNumber() == 0 {
+        if quizBrain.getQuestionNumber() == 0 {
             changeBackground(index: 0, isRight: !isEnd) // Если это первый вопрос
         }
         else {
-            for i in 0...(quizBrain.GetQuestionNumber() - 1) {
+            for i in 0...(quizBrain.getQuestionNumber() - 1) {
                 changeBackground(index: i, isRight: true) // Окраска предыдущих вопросов в зеленый
             }
-            changeBackground(index: quizBrain.GetQuestionNumber(), isRight: !isEnd)
+            changeBackground(index: quizBrain.getQuestionNumber(), isRight: !isEnd)
         }
     }
     

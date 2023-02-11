@@ -5,15 +5,14 @@ class LoseViewController: UIViewController {
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
 
-    var quizBrain:MillionareBrain!
+    var quizBrain: MillionareBrain!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scoreLabel.text = String(quizBrain.GetScore())
-        titleLable.text = quizBrain.userName
-        
-        print(quizBrain.userName)
+        scoreLabel.text = String(quizBrain.getScore())
+        titleLable.text = quizBrain.getUsername()
+        print(quizBrain.getUsername())
     }
 
     @IBAction func playAgainTapped(_ sender: UIButton) {

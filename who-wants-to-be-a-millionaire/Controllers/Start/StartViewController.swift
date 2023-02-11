@@ -9,11 +9,8 @@ import UIKit
 
 class StartViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
@@ -23,7 +20,7 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        let controller = GuesViewController(nibName: "GuesViewController", bundle: nil)
+        let controller = GuestViewController(nibName: "GuestViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         controller.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(controller, animated: false)

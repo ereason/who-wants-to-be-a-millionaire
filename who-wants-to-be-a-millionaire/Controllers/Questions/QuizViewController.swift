@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class QuestionsViewController: UIViewController {
+class QuizViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var QuestionNumLabel: UILabel!
@@ -14,16 +14,15 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var callHelp: UIButton!
     
     var player: AVAudioPlayer?
-    var quizBrain:MillionareBrain!
+    var quizBrain: MillionareBrain!
     var timer = Timer()
     var totalTime = 30
     var secondsPassed = 0
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
-        UpdateUI()
+
+        updateUI()
         player?.numberOfLoops = -1
         setSound(soundName: "thinking")
         player?.play()
@@ -34,15 +33,12 @@ class QuestionsViewController: UIViewController {
         super.viewWillAppear(animated)
      
         if let player = player, !player.isPlaying {
-            
             setSound(soundName: "thinking")
             player.currentTime = 0
             player.play()
             startTimer()
-            
         }
-
-        UpdateUI()
+        updateUI()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -55,26 +51,18 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func ButtonPresses(_ sender: UIButton) {
-        
-        
         answerButtons.forEach({$0.isEnabled = false})
-        
-        
         let userAnswer = sender.tag
-        let userGotItRight = quizBrain.questionAnswers[userAnswer]
-        
+        let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]
         timer.invalidate()
         self.setSound(soundName: "waiting")
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: { [self] in
             
             self.player?.stop()
             
-            if(userGotItRight.isCorrect){
+            if (userGotItRight.isCorrect) {
                 self.openProgressView(soundName: "rightAnswer", isAnswerCorrect: false)
-                
-                
-            }else {
+            } else {
                 self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
             }
         })
@@ -82,11 +70,10 @@ class QuestionsViewController: UIViewController {
     }
     
     func openProgressView(soundName:String, isAnswerCorrect: Bool){
-        
         self.setSound(soundName: soundName )
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: {
             
-            let controller = RewardsScreenViewController(nibName: "RewardsScreenViewController",bundle: nil)
+            let controller = ProgressViewController(nibName: "ProgressViewController",bundle: nil)
             controller.quizBrain = self.quizBrain
             controller.isEnd = isAnswerCorrect
             controller.modalPresentationStyle = .fullScreen
@@ -94,18 +81,18 @@ class QuestionsViewController: UIViewController {
             controller.navigationItem.hidesBackButton = true
             self.navigationController?.pushViewController(controller, animated: false)
 
-            self.UpdateUI()
+            self.updateUI()
         })
     }
     
     
-    func UpdateUI() {
-        questionLabel.text = quizBrain.GetCurrentQuestion()
-        scoreLabel.text = GetScoreLabel
-        QuestionNumLabel.text = GetQuestionLabel
+    func updateUI() {
+        questionLabel.text = quizBrain.getCurrentQuestion()
+        scoreLabel.text = getScoreLabel
+        QuestionNumLabel.text = getQuestionLabel
         
         answerButtons.forEach({
-            $0.setTitle(quizBrain.questionAnswers[$0.tag].answer, for: .normal)
+            $0.setTitle(quizBrain.getQuestionAnswers()[$0.tag].answer, for: .normal)
             $0.isEnabled = true
             $0.backgroundColor = UIColor.clear
         })
@@ -133,18 +120,17 @@ class QuestionsViewController: UIViewController {
     }
     
     
-    var GetScoreLabel: String {
-        return String(quizBrain.GetScore())+" RUB"
+    var getScoreLabel: String {
+        return String(quizBrain.getScore())+" RUB"
     }
     
-    var GetQuestionLabel: String {
-        return "Question " + String(quizBrain.GetQuestionNumber() + 1)
+    var getQuestionLabel: String {
+        return "Question " + String(quizBrain.getQuestionNumber() + 1)
     }
     
-    func setSound(soundName:String) {
+    func setSound(soundName: String) {
         guard let path = Bundle.main.path(forResource: soundName, ofType:"mp3") else {
             return
-            
         }
         let url = URL(fileURLWithPath: path)
         
@@ -160,9 +146,6 @@ class QuestionsViewController: UIViewController {
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
         
-        
-    
-        
         halfToHalf.setImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
         quizBrain.helps["fifty"] = true
         halfToHalf.isEnabled = false
@@ -170,7 +153,7 @@ class QuestionsViewController: UIViewController {
     
     
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
-        var res = quizBrain.AskHelp()
+        var res = quizBrain.askHelp()
         
         answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
         
@@ -180,12 +163,10 @@ class QuestionsViewController: UIViewController {
     }
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
-        var res = quizBrain.CallHelp()
-        
+        var res = quizBrain.callHelp()
         print(res)
        
         answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
-    
         
         callHelp.setImage(UIImage(named: "usedHelpCall.png"), for: .normal)
         
@@ -193,7 +174,7 @@ class QuestionsViewController: UIViewController {
         halfToHalf.isEnabled = false
     }
     
-    func blockButtons(status: Bool){
+    func blockButtons(status: Bool) {
         
         
     }

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardsScreenViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
                 <outlet property="continueButton" destination="6Ab-jg-g3f" id="SHg-a9-z1m"/>
                 <outlet property="endButton" destination="JaS-lX-MEu" id="Nbk-cJ-aSd"/>
@@ -40,28 +40,28 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="f8e-vv-NYR">
-                    <rect key="frame" x="0.0" y="69" width="393" height="739"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qhv-g5-O2e">
                             <rect key="frame" x="96" y="0.0" width="201" height="76"/>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Ee-GJ-fOc">
-                            <rect key="frame" x="39.333333333333343" y="91" width="314.33333333333326" height="575"/>
+                            <rect key="frame" x="39.333333333333343" y="91" width="314.33333333333326" height="595"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lf4-cf-msB">
-                                    <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle blue" translatesAutoresizingMaskIntoConstraints="NO" id="IkC-fY-be5">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loe-8U-KSu" userLabel="Label">
-                                            <rect key="frame" x="25" y="2.3333333333333428" width="94" height="24"/>
+                                            <rect key="frame" x="25" y="3" width="94" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Миллион" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYu-4r-QhW" userLabel="Label">
-                                            <rect key="frame" x="191.33333333333331" y="2.3333333333333428" width="98" height="24"/>
+                                            <rect key="frame" x="191.33333333333331" y="3" width="98" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -79,19 +79,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePV-9j-gt7">
-                                    <rect key="frame" x="0.0" y="39" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="40.333333333333343" width="314.33333333333331" height="30.333333333333329"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="BgB-s8-YUB">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ct-bc-cyq" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333428" width="94.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="94.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="od8-j3-MuV" userLabel="Label">
-                                            <rect key="frame" x="173.33333333333331" y="2.3333333333333428" width="116" height="24"/>
+                                            <rect key="frame" x="173.33333333333331" y="3" width="116" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -109,19 +109,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTV-bk-LDQ">
-                                    <rect key="frame" x="0.0" y="78" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="80.666666666666657" width="314.33333333333331" height="30.333333333333329"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-Gp-i6y">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeY-ER-dDG" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333428" width="94.333333333333314" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="94.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0w-Ra-een" userLabel="Label">
-                                            <rect key="frame" x="174" y="2.3333333333333428" width="115.33333333333331" height="24"/>
+                                            <rect key="frame" x="174" y="3" width="115.33333333333331" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -139,19 +139,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEP-pl-Vkl">
-                                    <rect key="frame" x="0.0" y="117" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="120.99999999999999" width="314.33333333333331" height="30.333333333333329"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="b8o-oX-IAZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAB-UV-lmP" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333144" width="93.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="93.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="125000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOf-cZ-VN2" userLabel="Label">
-                                            <rect key="frame" x="177.33333333333331" y="2.3333333333333144" width="112" height="24"/>
+                                            <rect key="frame" x="177.33333333333331" y="3" width="112" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -169,19 +169,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f08-7C-OsG">
-                                    <rect key="frame" x="0.0" y="156" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="161.33333333333331" width="314.33333333333331" height="30.333333333333343"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="g16-jO-tKG">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaQ-0D-oTj" userLabel="Label">
-                                            <rect key="frame" x="25" y="2.3333333333333144" width="91" height="24"/>
+                                            <rect key="frame" x="25" y="3" width="91" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNM-2g-JSF" userLabel="Label">
-                                            <rect key="frame" x="185" y="2.3333333333333144" width="104.33333333333331" height="24"/>
+                                            <rect key="frame" x="185" y="3" width="104.33333333333331" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -199,19 +199,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grt-QJ-YC6">
-                                    <rect key="frame" x="0.0" y="195" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="201.66666666666669" width="314.33333333333331" height="30.333333333333343"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle blue" translatesAutoresizingMaskIntoConstraints="NO" id="nP4-Ha-iPl">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-AG-EsK" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333144" width="94.333333333333314" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="94.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-LQ-6qD" userLabel="Label">
-                                            <rect key="frame" x="186" y="2.3333333333333144" width="103.33333333333331" height="24"/>
+                                            <rect key="frame" x="186" y="3" width="103.33333333333331" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -229,19 +229,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDX-7q-2Cn">
-                                    <rect key="frame" x="0.0" y="234" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="242.00000000000003" width="314.33333333333331" height="30.333333333333343"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="Qba-yh-mPe">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPL-ym-I1y" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333144" width="85.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="85.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL4-d6-KFk" userLabel="Label">
-                                            <rect key="frame" x="188.33333333333331" y="2.3333333333333144" width="101" height="24"/>
+                                            <rect key="frame" x="188.33333333333331" y="3" width="101" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -259,19 +259,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRl-WQ-B1i">
-                                    <rect key="frame" x="0.0" y="273" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="282.33333333333331" width="314.33333333333331" height="30.333333333333314"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="tPC-gQ-0PO">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWl-MI-m0G" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333144" width="85.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="85.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdR-uf-Cdr" userLabel="Label">
-                                            <rect key="frame" x="197.33333333333331" y="2.3333333333333144" width="92" height="24"/>
+                                            <rect key="frame" x="197.33333333333331" y="3" width="92" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -289,19 +289,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-ef-E7N">
-                                    <rect key="frame" x="0.0" y="312" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="322.66666666666669" width="314.33333333333331" height="30.333333333333314"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="pUN-ZV-QaP">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heo-OW-9Mm" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333144" width="84.333333333333314" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="84.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppn-ib-9Nq" userLabel="Label">
-                                            <rect key="frame" x="197" y="2.3333333333333144" width="92.333333333333314" height="24"/>
+                                            <rect key="frame" x="197" y="3" width="92.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -319,19 +319,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuP-v0-nJr">
-                                    <rect key="frame" x="0.0" y="351" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="363" width="314.33333333333331" height="30.333333333333314"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-0E-feT">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heP-nH-8XE" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333712" width="85.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="85.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BN8-IN-txD" userLabel="Label">
-                                            <rect key="frame" x="198" y="2.3333333333333712" width="91.333333333333314" height="24"/>
+                                            <rect key="frame" x="198" y="3" width="91.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -349,19 +349,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L46-t4-4RP">
-                                    <rect key="frame" x="0.0" y="390" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="403.33333333333337" width="314.33333333333331" height="30.333333333333314"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle blue" translatesAutoresizingMaskIntoConstraints="NO" id="GyR-3H-zPO">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl8-QZ-vDD" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333712" width="85.333333333333314" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="85.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noC-zj-rTK" userLabel="Label">
-                                            <rect key="frame" x="200.66666666666666" y="2.3333333333333712" width="88.666666666666657" height="24"/>
+                                            <rect key="frame" x="200.66666666666666" y="3" width="88.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -379,19 +379,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEv-eq-QIw">
-                                    <rect key="frame" x="0.0" y="429" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="443.66666666666663" width="314.33333333333331" height="30.333333333333314"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="1QV-ZF-49Y">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NX0-5k-h7C" userLabel="Label">
-                                            <rect key="frame" x="25" y="2.3333333333333712" width="86" height="24"/>
+                                            <rect key="frame" x="25" y="3" width="86" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXv-ST-w9U" userLabel="Label">
-                                            <rect key="frame" x="209.66666666666666" y="2.3333333333333712" width="79.666666666666657" height="24"/>
+                                            <rect key="frame" x="209.66666666666666" y="3" width="79.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -409,19 +409,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-Yw-OkB">
-                                    <rect key="frame" x="0.0" y="468" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="484" width="314.33333333333331" height="30.333333333333371"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="5va-hR-nmF">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBa-mD-z1E" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333712" width="85.666666666666657" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="85.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQE-Hb-QYd" userLabel="Label">
-                                            <rect key="frame" x="209.33333333333331" y="2.3333333333333712" width="80" height="24"/>
+                                            <rect key="frame" x="209.33333333333331" y="3" width="80" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -439,19 +439,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppT-m6-Qxm">
-                                    <rect key="frame" x="0.0" y="507" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="524.33333333333337" width="314.33333333333331" height="30.333333333333371"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle violet" translatesAutoresizingMaskIntoConstraints="NO" id="QsY-BR-1hf">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdh-la-sr5" userLabel="Label">
-                                            <rect key="frame" x="25" y="2.3333333333333712" width="85" height="24"/>
+                                            <rect key="frame" x="25" y="3" width="85" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5N2-mE-0ao" userLabel="Label">
-                                            <rect key="frame" x="210" y="2.3333333333333712" width="79.333333333333314" height="24"/>
+                                            <rect key="frame" x="210" y="3" width="79.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -469,19 +469,19 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcT-el-FVW">
-                                    <rect key="frame" x="0.0" y="546" width="314.33333333333331" height="29"/>
+                                    <rect key="frame" x="0.0" y="564.66666666666663" width="314.33333333333331" height="30.333333333333371"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle green" translatesAutoresizingMaskIntoConstraints="NO" id="CS9-q5-e3z">
-                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="30.333333333333332"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6t-Ii-nc5" userLabel="Label">
-                                            <rect key="frame" x="24.999999999999993" y="2.3333333333333712" width="82.333333333333314" height="24"/>
+                                            <rect key="frame" x="24.999999999999993" y="3" width="82.333333333333314" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 RUB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkd-qL-E2B" userLabel="Label">
-                                            <rect key="frame" x="212.66666666666666" y="2.3333333333333712" width="76.666666666666657" height="24"/>
+                                            <rect key="frame" x="212.66666666666666" y="3" width="76.666666666666657" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -501,7 +501,7 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tgb-LT-7xZ">
-                            <rect key="frame" x="39.333333333333343" y="681" width="314.33333333333326" height="58"/>
+                            <rect key="frame" x="39.333333333333343" y="701" width="314.33333333333326" height="58"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ab-jg-g3f">
                                     <rect key="frame" x="0.0" y="0.0" width="314.33333333333331" height="25"/>

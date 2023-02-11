@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GuesViewController: UIViewController {
+class GuestViewController: UIViewController {
 
     @IBOutlet weak var inputName: UITextField!
     
@@ -16,7 +16,7 @@ class GuesViewController: UIViewController {
     }
 
     @IBAction func startQuiz(_ sender: Any) {
-        let controller = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
+        let controller = QuizViewController(nibName: "QuizViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         
         controller.quizBrain = MillionareBrain(userName: inputName.text ?? "Guest")

@@ -14,8 +14,8 @@
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
 		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
 		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
-		048A08F12995204B00304FA7 /* GuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A08EF2995204B00304FA7 /* GuesViewController.swift */; };
-		048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048A08F02995204B00304FA7 /* GuesViewController.xib */; };
+		048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A08EF2995204B00304FA7 /* GuestViewController.swift */; };
+		048A08F22995204B00304FA7 /* GuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048A08F02995204B00304FA7 /* GuestViewController.xib */; };
 		04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE539E2992C15000EED0CD /* RulesViewController.swift */; };
 		04CE53A12992C15000EED0CD /* RulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE539F2992C15000EED0CD /* RulesViewController.xib */; };
 		5E1D95C12997A6B4009D6ADE /* startQuestion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95B92997A6B3009D6ADE /* startQuestion.mp3 */; };
@@ -32,10 +32,10 @@
 		5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C38298FD0F200A5F125 /* LaunchScreen.storyboard */; };
 		8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494DA6229928B1800AF1101 /* StartViewController.swift */; };
 		8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494DA6329928B1800AF1101 /* StartViewController.xib */; };
-		84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3405B2992CC290024130C /* QuestionsViewController.swift */; };
-		84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C3405C2992CC290024130C /* QuestionsViewController.xib */; };
-		C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* RewardsScreenViewController.swift */; };
-		C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* RewardsScreenViewController.xib */; };
+		84C3405D2992CC290024130C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3405B2992CC290024130C /* QuizViewController.swift */; };
+		84C3405E2992CC290024130C /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C3405C2992CC290024130C /* QuizViewController.xib */; };
+		C43E8F7229916F700066453B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* ProgressViewController.swift */; };
+		C43E8F7329916F700066453B /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* ProgressViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +46,8 @@
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
-		048A08EF2995204B00304FA7 /* GuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuesViewController.swift; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuesViewController.swift"; sourceTree = SOURCE_ROOT; };
-		048A08F02995204B00304FA7 /* GuesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GuesViewController.xib; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuesViewController.xib"; sourceTree = SOURCE_ROOT; };
+		048A08EF2995204B00304FA7 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuestViewController.swift; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuestViewController.swift"; sourceTree = SOURCE_ROOT; };
+		048A08F02995204B00304FA7 /* GuestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GuestViewController.xib; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuestViewController.xib"; sourceTree = SOURCE_ROOT; };
 		04CE539E2992C15000EED0CD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		04CE539F2992C15000EED0CD /* RulesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesViewController.xib; sourceTree = "<group>"; };
 		5E1D95B92997A6B3009D6ADE /* startQuestion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startQuestion.mp3; sourceTree = "<group>"; };
@@ -66,10 +66,10 @@
 		5EFF0C3B298FD0F200A5F125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8494DA6229928B1800AF1101 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8494DA6329928B1800AF1101 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
-		84C3405B2992CC290024130C /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		84C3405C2992CC290024130C /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
-		C43E8F7029916F700066453B /* RewardsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsScreenViewController.swift; sourceTree = "<group>"; };
-		C43E8F7129916F700066453B /* RewardsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsScreenViewController.xib; sourceTree = "<group>"; };
+		84C3405B2992CC290024130C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		84C3405C2992CC290024130C /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		C43E8F7029916F700066453B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		C43E8F7129916F700066453B /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 		04D7759C29951F960077FA6E /* Guest */ = {
 			isa = PBXGroup;
 			children = (
-				048A08EF2995204B00304FA7 /* GuesViewController.swift */,
-				048A08F02995204B00304FA7 /* GuesViewController.xib */,
+				048A08EF2995204B00304FA7 /* GuestViewController.swift */,
+				048A08F02995204B00304FA7 /* GuestViewController.xib */,
 			);
 			name = Guest;
 			path = Rules/Guest;
@@ -202,8 +202,8 @@
 		84C340592992CBF50024130C /* Questions */ = {
 			isa = PBXGroup;
 			children = (
-				84C3405B2992CC290024130C /* QuestionsViewController.swift */,
-				84C3405C2992CC290024130C /* QuestionsViewController.xib */,
+				84C3405B2992CC290024130C /* QuizViewController.swift */,
+				84C3405C2992CC290024130C /* QuizViewController.xib */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 		C460E0F02993CD5F00757359 /* Rewards */ = {
 			isa = PBXGroup;
 			children = (
-				C43E8F7029916F700066453B /* RewardsScreenViewController.swift */,
-				C43E8F7129916F700066453B /* RewardsScreenViewController.xib */,
+				C43E8F7029916F700066453B /* ProgressViewController.swift */,
+				C43E8F7129916F700066453B /* ProgressViewController.xib */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */,
+				C43E8F7329916F700066453B /* ProgressViewController.xib in Resources */,
 				5E1D95C52997A6B4009D6ADE /* bg2.mp3 in Resources */,
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
 				02074E1D299744B90049B917 /* README.md in Resources */,
@@ -288,9 +288,9 @@
 				5E1D95C42997A6B4009D6ADE /* bg.mp3 in Resources */,
 				5E1D95C32997A6B4009D6ADE /* waiting.mp3 in Resources */,
 				5E1D95C82997A6B4009D6ADE /* zvuk-zastavki.mp3 in Resources */,
-				048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */,
+				048A08F22995204B00304FA7 /* GuestViewController.xib in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
-				84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */,
+				84C3405E2992CC290024130C /* QuizViewController.xib in Resources */,
 				5E1D95C22997A6B4009D6ADE /* wrongAnswer.mp3 in Resources */,
 				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
 				04CE53A12992C15000EED0CD /* RulesViewController.xib in Resources */,
@@ -305,14 +305,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
-				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
+				C43E8F7229916F700066453B /* ProgressViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
-				84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */,
+				84C3405D2992CC290024130C /* QuizViewController.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */,
-				048A08F12995204B00304FA7 /* GuesViewController.swift in Sources */,
+				048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,19 +2,16 @@ import Foundation
 
 class MillionareBrain {
   
-    public var userName:String
-    var questions:[Question]
-   
-    //TODO убать паблик
-    public var questionAnswers:[(answer:String,isCorrect:Bool)]
-    public var helps:[String : Bool] = [
-        "fifty":false,
-        "call":false,
-        "view":false]
-    ///
+    private var userName: String
+    private var questions: [Question]
+    private var questionAnswers: [(answer: String, isCorrect: Bool)]
+    var helps: [String : Bool] = [
+        "fifty": false,
+        "call": false,
+        "view": false]
     
-    private var questionNumber:Int
-    private var score:Int
+    private var questionNumber: Int
+    private var score: Int
     private let costsOfQuestions: [Int] = [
         100,
         200,
@@ -33,38 +30,46 @@ class MillionareBrain {
         1_000_000
     ]
     
-    public init(userName:String){
+    public init(userName:String) {
         self.userName=userName
         score = 0
-        questions = Question.questions()
+        questions = Question.getQuestions()
         questionNumber = 0
         questionAnswers = []
         self.randomizeAnswers()
     }
     
     
-    func GetScore() -> Int {
+    func getScore() -> Int {
         return score
     }
     
-    func GetQuestionNumber() -> Int {
+    func getQuestionNumber() -> Int {
         return questionNumber
     }
     
-    func GetCurrentQuestion()->String {
+    func getCurrentQuestion() -> String {
         return questions[questionNumber].ask
     }
     
-    private func randomizeAnswers(){
+    func getQuestionAnswers() -> [(answer: String, isCorrect: Bool)] {
+        return questionAnswers
+    }
+    
+    func getUsername() -> String {
+        return userName
+    }
+    
+    private func randomizeAnswers() {
         questionAnswers.removeAll()
         questions[questionNumber].wrongAnswers.forEach { str in
-            questionAnswers.append((str,false))
+            questionAnswers.append((str, false))
         }
-        questionAnswers.append((questions[questionNumber].correctAnswer,true))
+        questionAnswers.append((questions[questionNumber].correctAnswer, true))
         questionAnswers.shuffle()
     }
     
-    func NextQuestion() {
+    func goToNextQuestion() {
         score += costsOfQuestions[questionNumber]
         
         if questionNumber < questions.count - 1 {
@@ -73,21 +78,20 @@ class MillionareBrain {
         }
     }
     
-    func CallHelp()->String{
-        return GetCorrectAnswerWithChanse(percent: 80)
+    func callHelp() -> String {
+        return getCorrectAnswerWithChanse(percent: 80)
     }
     
-    func AskHelp()->String{
-        return GetCorrectAnswerWithChanse(percent: 50)
+    func askHelp() -> String {
+        return getCorrectAnswerWithChanse(percent: 50)
     }
     
-    func GetCorrectAnswerWithChanse(percent: Int)->String{
-        if(Int.random(in: 1...100) < percent){
-            
+    func getCorrectAnswerWithChanse(percent: Int) -> String {
+        if (Int.random(in: 1...100) < percent) {
             return questions[questionNumber].correctAnswer
             //questionAnswers.first(where: {$0.isCorrect})!.answer
-        }else{
-            return  questions[questionNumber].wrongAnswers.randomElement() ?? ""
+        } else {
+            return questions[questionNumber].wrongAnswers.randomElement() ?? ""
             //questionAnswers.filter{!$0.isCorrect}.randomElement()!.answer
         }
     }

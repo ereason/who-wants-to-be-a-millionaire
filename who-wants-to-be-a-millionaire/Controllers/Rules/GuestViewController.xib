@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuesViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuestViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
                 <outlet property="inputName" destination="3rR-Vp-lkN" id="xqe-A1-xqS"/>
                 <outlet property="view" destination="XFQ-lL-isB" id="UW1-O2-xh2"/>
@@ -34,7 +34,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3Z-lc-ehH">
-                    <rect key="frame" x="63.666666666666657" y="683" width="266" height="50"/>
+                    <rect key="frame" x="63.666666666666657" y="648" width="266" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="nAp-Gt-bgn"/>
                     </constraints>
@@ -48,7 +48,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-5X-h0G">
-                    <rect key="frame" x="141.66666666666666" y="753" width="110" height="50"/>
+                    <rect key="frame" x="141.66666666666666" y="718" width="110" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="RDI-j4-5br"/>
                     </constraints>
@@ -67,7 +67,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Dh0-Er-Y8Y" firstAttribute="top" secondItem="XFQ-lL-isB" secondAttribute="top" id="71M-eQ-2am"/>
-                <constraint firstItem="SMr-HZ-efR" firstAttribute="bottom" secondItem="cUe-5X-h0G" secondAttribute="bottom" constant="15" id="LyS-H7-QMz"/>
+                <constraint firstItem="SMr-HZ-efR" firstAttribute="bottom" secondItem="cUe-5X-h0G" secondAttribute="bottom" constant="50" id="LyS-H7-QMz"/>
                 <constraint firstItem="4d8-OL-xuU" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="MeI-ZB-cgx"/>
                 <constraint firstItem="cUe-5X-h0G" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="Oog-Rc-RoV"/>
                 <constraint firstItem="R3Z-lc-ehH" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="Pq9-b4-090"/>
