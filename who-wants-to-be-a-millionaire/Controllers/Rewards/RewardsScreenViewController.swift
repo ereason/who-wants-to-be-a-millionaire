@@ -21,8 +21,7 @@ class RewardsScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-               
-            continueButton.isEnabled = !isEnd
+               continueButton.isEnabled = !isEnd
         
         playSound(soundName: "bg2")
         setupView()
@@ -38,7 +37,7 @@ class RewardsScreenViewController: UIViewController {
     
     @IBAction func goNext(_ sender: Any) {
         print(quizBrain.GetQuestionNumber())
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func getMoney(_ sender: Any) {
@@ -69,15 +68,16 @@ class RewardsScreenViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
     func setupView() {
-        if progress == 0 {
-            changeBackground(index: 0, isRight: isTrue) // Если это первый вопрос
+        if quizBrain.GetQuestionNumber() == 0 {
+            changeBackground(index: 0, isRight: !isEnd) // Если это первый вопрос
         }
         else {
-            for i in 0...(progress - 1) {
+            for i in 0...(quizBrain.GetQuestionNumber() - 1) {
                 changeBackground(index: i, isRight: true) // Окраска предыдущих вопросов в зеленый
             }
-            changeBackground(index: progress, isRight: isTrue)
+            changeBackground(index: quizBrain.GetQuestionNumber(), isRight: !isEnd)
         }
     }
     

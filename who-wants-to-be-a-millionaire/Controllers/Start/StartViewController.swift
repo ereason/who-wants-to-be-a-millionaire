@@ -17,7 +17,7 @@ class StartViewController: UIViewController {
     }
 
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
-        let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
+        let controller = RulesViewController(nibName: "RulesViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true)
     }
