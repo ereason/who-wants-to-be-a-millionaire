@@ -1,14 +1,8 @@
-//
-//  QuestionsViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Админ on 08.02.2023.
-//
-
 import UIKit
+import AVFoundation
 
 class QuestionsViewController: UIViewController {
-    
+    var player: AVAudioPlayer?
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var QuestionNumLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -20,8 +14,23 @@ class QuestionsViewController: UIViewController {
         
         super.viewDidLoad()
         UpdateUI()
+        player?.numberOfLoops = -1
+        playSound()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let player = player, !player.isPlaying {
+            player.play()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let player = player {
+            player.stop()
+        }
+    }
     @IBAction func ButtonPresses(_ sender: UIButton) {
         
         //TODO: блокировка кнопок, чтоб нельзя было спамить
@@ -72,5 +81,19 @@ class QuestionsViewController: UIViewController {
     
     var GetQuestionLabel: String {
         return "Question " + String(quizBrain.GetQuestionNumber() + 1)
+    }
+    
+    func playSound() {
+        guard let path = Bundle.main.path(forResource: "thinking", ofType:"mp3") else {
+            return }
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }

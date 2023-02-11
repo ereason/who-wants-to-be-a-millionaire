@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02074E1D299744B90049B917 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 02074E1C299744B80049B917 /* README.md */; };
+		02074E1F299753C70049B917 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02074E1E299753C70049B917 /* thinking.mp3 */; };
 		027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027F965A2991E2F900B1B738 /* MillionareBrain.swift */; };
 		0285E53B29901F3000032476 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0285E53A29901F3000032476 /* questions.json */; };
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		02074E1C299744B80049B917 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		02074E1E299753C70049B917 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
 		027F965A2991E2F900B1B738 /* MillionareBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionareBrain.swift; sourceTree = "<group>"; };
 		0285E53A29901F3000032476 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				AAAD33E929937BF300CAA30C /* Extensions */,
 				0285E53929901F2600032476 /* Model */,
 				5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */,
+				02074E1E299753C70049B917 /* thinking.mp3 */,
 				5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */,
 				5EB7872A298FD3360086D2BE /* Views */,
 				5EB7872B298FD34A0086D2BE /* Controllers */,
@@ -269,6 +272,7 @@
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
 				02074E1D299744B90049B917 /* README.md in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
+				02074E1F299753C70049B917 /* thinking.mp3 in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
@@ -435,7 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "who-wants-to-be-a-millionaire/Info.plist";
@@ -449,7 +453,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeapp.millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -464,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 723HTEFHBA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "who-wants-to-be-a-millionaire/Info.plist";
@@ -478,7 +482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.fibeapp.millionaire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
