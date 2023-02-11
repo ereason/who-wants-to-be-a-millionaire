@@ -2,6 +2,7 @@ import Foundation
 
 class MillionareBrain {
   
+    public var userName:String
     var questions:[Question]
    
     //TODO убать паблик
@@ -11,7 +12,8 @@ class MillionareBrain {
     private var questionNumber:Int
     private var score:Int
     
-    public init(){
+    public init(userName:String){
+        self.userName=userName
         score = 0
         questions = Question.questions()
         questionNumber = 0

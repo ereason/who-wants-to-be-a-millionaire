@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuesViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
+                <outlet property="inputName" destination="TOW-kb-wCt" id="NbO-K0-ABh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,21 +26,24 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-T5-wU5">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="396.33333333333331"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="203.33333333333334"/>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syp-VO-sKi">
-                            <rect key="frame" x="16" y="406.33333333333331" width="361.33333333333331" height="232.66666666666669"/>
-                            <attributedString key="attributedText">
-                                <fragment content="можно зарегистрироваться для сохранения результатов">
-                                    <attributes>
-                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <font key="NSFont" metaFont="system" size="27"/>
-                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                    </attributes>
-                                </fragment>
-                            </attributedString>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qp1-8q-k1j">
+                            <rect key="frame" x="0.0" y="213.33333333333329" width="393" height="425.66666666666674"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-kb-wCt">
+                                    <rect key="frame" x="50" y="195.66666666666669" width="293" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="TOW-kb-wCt" firstAttribute="centerY" secondItem="Qp1-8q-k1j" secondAttribute="centerY" id="DaC-hM-aXn"/>
+                                <constraint firstAttribute="trailing" secondItem="TOW-kb-wCt" secondAttribute="trailing" constant="50" id="Fa1-vC-HnW"/>
+                                <constraint firstItem="TOW-kb-wCt" firstAttribute="centerX" secondItem="Qp1-8q-k1j" secondAttribute="centerX" id="TYe-Gf-Tg2"/>
+                                <constraint firstItem="TOW-kb-wCt" firstAttribute="leading" secondItem="Qp1-8q-k1j" secondAttribute="leading" constant="50" id="Z6i-GH-PvF"/>
+                            </constraints>
+                        </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bE-e0-cGT">
                             <rect key="frame" x="30" y="649" width="333" height="50"/>
                             <constraints>
@@ -50,6 +54,9 @@
                             <buttonConfiguration key="configuration" style="filled" title="Зарегистрируйтесь">
                                 <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="startQuiz:" destination="-1" eventType="touchUpInside" id="m2d-Ty-xbT"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1A-eL-gXJ">
                             <rect key="frame" x="141.66666666666666" y="709" width="110" height="50"/>
@@ -65,8 +72,14 @@
                         </button>
                     </subviews>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qp1-8q-k1j" secondAttribute="trailing" id="24s-kJ-BNw"/>
                         <constraint firstItem="ukd-T5-wU5" firstAttribute="leading" secondItem="xgF-sZ-CyY" secondAttribute="leading" id="2Bv-SE-2eL"/>
+                        <constraint firstItem="Qp1-8q-k1j" firstAttribute="top" secondItem="ukd-T5-wU5" secondAttribute="bottom" id="7Cc-Zd-H91"/>
+                        <constraint firstItem="Qp1-8q-k1j" firstAttribute="leading" secondItem="xgF-sZ-CyY" secondAttribute="leading" id="ORu-Ba-Xbu"/>
+                        <constraint firstItem="2bE-e0-cGT" firstAttribute="top" secondItem="Qp1-8q-k1j" secondAttribute="bottom" id="Sim-4J-ybJ"/>
+                        <constraint firstItem="Qp1-8q-k1j" firstAttribute="leading" secondItem="xgF-sZ-CyY" secondAttribute="leading" id="cuB-7X-9Pv"/>
                         <constraint firstItem="z1A-eL-gXJ" firstAttribute="top" secondItem="2bE-e0-cGT" secondAttribute="bottom" constant="10" id="d73-dp-viW"/>
+                        <constraint firstAttribute="trailing" secondItem="Qp1-8q-k1j" secondAttribute="trailing" id="hjB-dI-92K"/>
                         <constraint firstAttribute="trailing" secondItem="ukd-T5-wU5" secondAttribute="trailing" id="k27-qh-zP7"/>
                         <constraint firstItem="2bE-e0-cGT" firstAttribute="leading" secondItem="xgF-sZ-CyY" secondAttribute="leading" constant="30" id="kZJ-YW-L6Y"/>
                         <constraint firstAttribute="trailing" secondItem="2bE-e0-cGT" secondAttribute="trailing" constant="30" id="oKz-Rh-6s0"/>
