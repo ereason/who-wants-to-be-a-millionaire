@@ -34,20 +34,20 @@ class QuestionsViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute: {
             
             if(userGotItRight.isCorrect){
-                sender.backgroundColor = UIColor.green
+                
+                let controller = RewardsScreenViewController(nibName: "RewardsScreenViewController",
+                                                             bundle: nil)
+                controller.progress = self.quizBrain.GetQuestionNumber()
+                controller.modalPresentationStyle = .fullScreen
+                self.present(controller, animated: true, completion: nil)
+                self.quizBrain.NextQuestion()
                 
             }else {
                 sender.backgroundColor = UIColor.red
             }
             
-            let controller = RewardsScreenViewController(nibName: "RewardsScreenViewController",
-                                                         bundle: nil)
-            controller.progress = self.quizBrain.GetQuestionNumber()
-            controller.modalPresentationStyle = .fullScreen
-            
-            self.present(controller, animated: true, completion: nil)
-           
-            self.quizBrain.NextQuestion()
+        
+          
             self.UpdateUI()
         
         })
