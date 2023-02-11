@@ -95,40 +95,48 @@ was invented in our life?</string>
                                 <constraint firstItem="0SA-p4-i4r" firstAttribute="top" secondItem="NpT-Nz-mCe" secondAttribute="top" id="ziP-NM-TV5"/>
                             </constraints>
                         </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
-                            <rect key="frame" x="0.0" y="328.66666666666669" width="373" height="230.00000000000006"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
+                            <rect key="frame" x="0.0" y="333.66666666666669" width="373" height="215.00000000000006"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA">
                                     <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="f4E-OG-VXD"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <backgroundConfiguration key="background" image="Rectangle blue"/>
+                                    </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="26p-sE-DqU"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="B" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJo-8k-SqY" userLabel="ButtonB" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="60" width="373" height="50"/>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="B" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJo-8k-SqY" userLabel="ButtonB">
+                                    <rect key="frame" x="0.0" y="55" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <backgroundConfiguration key="background" image="Rectangle blue"/>
+                                    </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="KcU-UA-8nH"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="C" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-nf-rky" userLabel="ButtonC" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="120" width="373" height="50"/>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="C" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-nf-rky" userLabel="ButtonC">
+                                    <rect key="frame" x="0.0" y="110" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <backgroundConfiguration key="background" image="Rectangle blue"/>
+                                    </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="Fyo-FV-prL"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="D" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-T3-0dG" userLabel="ButtonD" customClass="CustomButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="179.99999999999994" width="373" height="50"/>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="D" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-T3-0dG" userLabel="ButtonD">
+                                    <rect key="frame" x="0.0" y="164.99999999999994" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                        <backgroundConfiguration key="background" image="Rectangle blue"/>
+                                    </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="bXS-OL-b6I"/>
                                     </connections>
@@ -136,7 +144,7 @@ was invented in our life?</string>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
-                            <rect key="frame" x="0.0" y="607.33333333333337" width="373" height="99"/>
+                            <rect key="frame" x="0.0" y="602.33333333333337" width="373" height="99"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-gT-hEq">
                                     <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="99"/>
@@ -155,7 +163,7 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-5a-nM4">
-                                    <rect key="frame" x="248.66666666666674" y="0.0" width="124.33333333333331" height="99"/>
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="99"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="helpCall"/>
                                     <connections>
@@ -186,6 +194,7 @@ was invented in our life?</string>
         </view>
     </objects>
     <resources>
+        <image name="Rectangle blue" width="320" height="39"/>
         <image name="background" width="414" height="736"/>
         <image name="helpCall" width="105" height="81"/>
         <image name="helpFifty" width="105" height="81"/>

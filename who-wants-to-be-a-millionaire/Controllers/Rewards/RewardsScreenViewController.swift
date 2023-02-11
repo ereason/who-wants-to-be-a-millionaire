@@ -36,6 +36,7 @@ class RewardsScreenViewController: UIViewController {
     
     @IBAction func goNext(_ sender: Any) {
         print(quizBrain.GetQuestionNumber())
+        quizBrain.NextQuestion()
         self.navigationController?.popViewController(animated: true)
     }
     

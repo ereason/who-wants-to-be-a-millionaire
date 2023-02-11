@@ -24,5 +24,8 @@ class GuesViewController: UIViewController {
         self.navigationController?.pushViewController(controller, animated: false)
     }
     
-
+    @IBAction func goBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated:false)
+    }
+    
 }

@@ -7,6 +7,10 @@ class MillionareBrain {
    
     //TODO убать паблик
     public var questionAnswers:[(answer:String,isCorrect:Bool)]
+    public var helps:[String : Bool] = [
+        "fifty":false,
+        "call":false,
+        "view":false]
     ///
     
     private var questionNumber:Int

@@ -58,6 +58,9 @@
                         <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="goBack:" destination="-1" eventType="touchUpInside" id="Cc4-nS-k7J"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="SMr-HZ-efR"/>

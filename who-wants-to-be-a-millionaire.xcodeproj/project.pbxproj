@@ -34,7 +34,6 @@
 		8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494DA6329928B1800AF1101 /* StartViewController.xib */; };
 		84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3405B2992CC290024130C /* QuestionsViewController.swift */; };
 		84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C3405C2992CC290024130C /* QuestionsViewController.xib */; };
-		AAAD33F22994F05F00CAA30C /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD33F12994F05F00CAA30C /* AnswerButton.swift */; };
 		C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* RewardsScreenViewController.swift */; };
 		C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* RewardsScreenViewController.xib */; };
 /* End PBXBuildFile section */
@@ -69,7 +68,6 @@
 		8494DA6329928B1800AF1101 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		84C3405B2992CC290024130C /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		84C3405C2992CC290024130C /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
-		AAAD33F12994F05F00CAA30C /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
 		C43E8F7029916F700066453B /* RewardsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsScreenViewController.swift; sourceTree = "<group>"; };
 		C43E8F7129916F700066453B /* RewardsScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardsScreenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +124,6 @@
 		5EB7872A298FD3360086D2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAAD33F32994F08B00CAA30C /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,14 +206,6 @@
 				84C3405C2992CC290024130C /* QuestionsViewController.xib */,
 			);
 			path = Questions;
-			sourceTree = "<group>";
-		};
-		AAAD33F32994F08B00CAA30C /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				AAAD33F12994F05F00CAA30C /* AnswerButton.swift */,
-			);
-			path = Buttons;
 			sourceTree = "<group>";
 		};
 		C460E0F02993CD5F00757359 /* Rewards */ = {
@@ -318,7 +307,6 @@
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
 				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
-				AAAD33F22994F05F00CAA30C /* AnswerButton.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
