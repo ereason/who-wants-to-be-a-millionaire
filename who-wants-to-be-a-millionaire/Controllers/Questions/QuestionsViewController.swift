@@ -6,7 +6,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var QuestionNumLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var answerButtons : [UIButton]!
+    @IBOutlet var answerButtons: [CustomButton]!
     @IBOutlet weak var timeIndicaror: UIProgressView!
     
     @IBOutlet weak var halfToHalf: UIButton!
