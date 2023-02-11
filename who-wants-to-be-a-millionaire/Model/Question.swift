@@ -1,10 +1,10 @@
 import Foundation
 
 struct Question: Decodable {
-    let level: Int
-    let ask: String
-    let correctAnswer: String
-    let wrongAnswers: [String]
+    public let level: Int
+    public let ask: String
+    public  let correctAnswer: String
+    public let wrongAnswers: [String]
     
     static func questions() -> [Question] {
         if let url = Bundle.main.url(forResource: "questions",

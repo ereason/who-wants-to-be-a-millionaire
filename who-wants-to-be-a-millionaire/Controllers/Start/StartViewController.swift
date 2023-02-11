@@ -16,14 +16,17 @@ class StartViewController: UIViewController {
     }
 
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
-        let controller = RulesViewController(nibName: "RulesViewController", bundle: nil)
+        let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true)
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         let controller = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
-        navigationController?.pushViewController(controller, animated: true)
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
     }
     
 }
+
+
