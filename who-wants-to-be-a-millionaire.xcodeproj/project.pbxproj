@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02074E1D299744B90049B917 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 02074E1C299744B80049B917 /* README.md */; };
 		027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027F965A2991E2F900B1B738 /* MillionareBrain.swift */; };
 		0285E53B29901F3000032476 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0285E53A29901F3000032476 /* questions.json */; };
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02074E1C299744B80049B917 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		027F965A2991E2F900B1B738 /* MillionareBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionareBrain.swift; sourceTree = "<group>"; };
 		0285E53A29901F3000032476 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		5EFF0C21298FD0F000A5F125 = {
 			isa = PBXGroup;
 			children = (
+				02074E1C299744B80049B917 /* README.md */,
 				5EFF0C2C298FD0F000A5F125 /* who-wants-to-be-a-millionaire */,
 				5EFF0C2B298FD0F000A5F125 /* Products */,
 			);
@@ -264,6 +267,7 @@
 			files = (
 				C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */,
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
+				02074E1D299744B90049B917 /* README.md in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */,
