@@ -11,10 +11,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionsViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
                 <outlet property="QuestionNumLabel" destination="0Ag-JW-iLa" id="hT6-8C-HfY"/>
+                <outlet property="callHelp" destination="aJ8-5a-nM4" id="dUC-IK-iRk"/>
+                <outlet property="halfToHalf" destination="bjQ-gT-hEq" id="lbz-UX-Uwc"/>
                 <outlet property="questionLabel" destination="j9B-a7-mor" id="DCt-Db-hQM"/>
                 <outlet property="scoreLabel" destination="fpp-op-GiO" id="HMD-F3-1JW"/>
                 <outlet property="timeIndicaror" destination="H9A-zQ-0uK" id="51v-aa-eZ7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewersHelp" destination="r7d-TC-P3f" id="JPl-wb-hQ2"/>
                 <outletCollection property="answerButtons" destination="F55-8x-dxo" collectionClass="NSMutableArray" id="2L2-9q-jBg"/>
                 <outletCollection property="answerButtons" destination="xJo-8k-SqY" collectionClass="NSMutableArray" id="Wwe-QE-LJt"/>
                 <outletCollection property="answerButtons" destination="ChN-nf-rky" collectionClass="NSMutableArray" id="Hmv-f1-8Qa"/>
@@ -132,43 +135,39 @@ was invented in our life?</string>
                             <rect key="frame" x="0.0" y="506" width="393" height="253"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
+                                    <rect key="frame" x="0.0" y="118.66666666666664" width="393" height="134.33333333333337"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8A-dp-m8F" userLabel="helpHallView">
-                                            <rect key="frame" x="0.0" y="0.0" width="131" height="253"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpFifty" translatesAutoresizingMaskIntoConstraints="NO" id="ePA-Hy-zkD">
-                                                    <rect key="frame" x="20" y="20" width="105" height="85"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVN-Pc-azD" userLabel="helpCallView">
-                                            <rect key="frame" x="131" y="0.0" width="131" height="253"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpHall" translatesAutoresizingMaskIntoConstraints="NO" id="2x1-Hz-3dj">
-                                                    <rect key="frame" x="20" y="20" width="105" height="81"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-kN-e3f" userLabel="helpFiftyView">
-                                            <rect key="frame" x="262" y="0.0" width="131" height="253"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpCall" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-H2-eCb">
-                                                    <rect key="frame" x="20" y="20" width="105" height="81"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-gT-hEq">
+                                            <rect key="frame" x="0.0" y="0.0" width="131" height="134.33333333333334"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="helpFifty" title="Button"/>
+                                            <connections>
+                                                <action selector="halfToHalpPressed:" destination="-1" eventType="touchUpInside" id="joh-zU-RAy"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-TC-P3f">
+                                            <rect key="frame" x="131" y="0.0" width="131" height="134.33333333333334"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="helpHall" title="Button"/>
+                                            <connections>
+                                                <action selector="viewersHelpPressed:" destination="-1" eventType="touchUpInside" id="44f-Ft-j2d"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-5a-nM4">
+                                            <rect key="frame" x="262" y="0.0" width="131" height="134.33333333333334"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="helpCall" title="Button"/>
+                                            <connections>
+                                                <action selector="callHelpPressed:" destination="-1" eventType="touchUpInside" id="S5X-rp-YgR"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </stackView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="DiS-Ef-Qu8" firstAttribute="leading" secondItem="O4g-NZ-zdg" secondAttribute="leading" id="KQX-Rf-Puh"/>
-                                <constraint firstItem="DiS-Ef-Qu8" firstAttribute="top" secondItem="O4g-NZ-zdg" secondAttribute="top" id="RTu-Ol-xa3"/>
-                                <constraint firstAttribute="trailing" secondItem="DiS-Ef-Qu8" secondAttribute="trailing" id="W1q-0i-qyj"/>
-                                <constraint firstAttribute="bottom" secondItem="DiS-Ef-Qu8" secondAttribute="bottom" id="u4h-fj-bzu"/>
+                                <constraint firstAttribute="bottom" secondItem="DiS-Ef-Qu8" secondAttribute="bottom" id="C6X-a8-TBr"/>
+                                <constraint firstAttribute="trailing" secondItem="DiS-Ef-Qu8" secondAttribute="trailing" id="FoW-yB-cZi"/>
+                                <constraint firstItem="DiS-Ef-Qu8" firstAttribute="leading" secondItem="O4g-NZ-zdg" secondAttribute="leading" id="q15-wS-Za2"/>
                             </constraints>
                         </view>
                     </subviews>

@@ -7,8 +7,11 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var QuestionNumLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var answerButtons : [UIButton]!
-    
     @IBOutlet weak var timeIndicaror: UIProgressView!
+    
+    @IBOutlet weak var halfToHalf: UIButton!
+    @IBOutlet weak var viewersHelp: UIButton!
+    @IBOutlet weak var callHelp: UIButton!
     
     var player: AVAudioPlayer?
     var quizBrain:MillionareBrain!
@@ -57,6 +60,8 @@ class QuestionsViewController: UIViewController {
             startTimer()
             
         }
+        
+        UpdateUI()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -67,6 +72,7 @@ class QuestionsViewController: UIViewController {
             timer.invalidate()
         }
     }
+    
     @IBAction func ButtonPresses(_ sender: UIButton) {
         
        
@@ -147,5 +153,27 @@ class QuestionsViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    
+    @IBAction func halfToHalpPressed(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func viewersHelpPressed(_ sender: UIButton) {
+        var res = quizBrain.AskHelp()
+        answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
+      
+        viewersHelp.setImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
+        viewersHelp.isEnabled = false
+    }
+    
+    @IBAction func callHelpPressed(_ sender: UIButton) {
+        var res = quizBrain.CallHelp()
+        answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
+       
+        viewersHelp.setImage(UIImage(named: "usedHelpCall.png"), for: .normal)
+        viewersHelp.isEnabled = false
     }
 }

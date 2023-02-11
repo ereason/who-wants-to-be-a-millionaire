@@ -31,7 +31,6 @@ class RewardsScreenViewController: UIViewController {
         super.viewWillDisappear(animated)
         if let player = player {
             player.stop()
-
         }
     }
     
