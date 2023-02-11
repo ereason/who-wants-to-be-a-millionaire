@@ -9,9 +9,10 @@ import UIKit
 import AVFAudio
 
 class RewardsScreenViewController: UIViewController {
-
+    
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var endButton: UIButton!
+    @IBOutlet var backgroundImages: [UIImageView]!
     
     var quizBrain:MillionareBrain!
     
@@ -20,12 +21,11 @@ class RewardsScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
+               
             continueButton.isEnabled = !isEnd
         
         playSound(soundName: "bg2")
-        // Do any additional setup after loading the view.
+        setupView()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -35,7 +35,7 @@ class RewardsScreenViewController: UIViewController {
 
         }
     }
-
+    
     @IBAction func goNext(_ sender: Any) {
         print(quizBrain.GetQuestionNumber())
         self.dismiss(animated: true)
@@ -51,7 +51,7 @@ class RewardsScreenViewController: UIViewController {
         //present(controller, animated: true)
     
     }
-
+    
     
     
     func playSound(soundName:String) {
@@ -67,6 +67,30 @@ class RewardsScreenViewController: UIViewController {
             
         } catch let error {
             print(error.localizedDescription)
+        }
+    }
+    func setupView() {
+        if progress == 0 {
+            changeBackground(index: 0, isRight: isTrue) // Если это первый вопрос
+        }
+        else {
+            for i in 0...(progress - 1) {
+                changeBackground(index: i, isRight: true) // Окраска предыдущих вопросов в зеленый
+            }
+            changeBackground(index: progress, isRight: isTrue)
+        }
+    }
+    
+    func changeBackground(index: Int, isRight: Bool) {
+        if isRight {
+            if [4, 9, 14].contains(index) {
+                backgroundImages[index].image = UIImage(named: "Rectangle yellow")
+                return
+            }
+            backgroundImages[index].image = UIImage(named: "Rectangle green")
+        }
+        else {
+            backgroundImages[index].image = UIImage(named: "Rectangle red")
         }
     }
 }
