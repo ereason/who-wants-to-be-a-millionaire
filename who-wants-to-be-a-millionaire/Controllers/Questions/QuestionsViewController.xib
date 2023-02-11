@@ -13,6 +13,7 @@
                 <outlet property="QuestionNumLabel" destination="0Ag-JW-iLa" id="hT6-8C-HfY"/>
                 <outlet property="questionLabel" destination="j9B-a7-mor" id="DCt-Db-hQM"/>
                 <outlet property="scoreLabel" destination="fpp-op-GiO" id="HMD-F3-1JW"/>
+                <outlet property="timeIndicaror" destination="H9A-zQ-0uK" id="51v-aa-eZ7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="answerButtons" destination="F55-8x-dxo" collectionClass="NSMutableArray" id="2L2-9q-jBg"/>
                 <outletCollection property="answerButtons" destination="xJo-8k-SqY" collectionClass="NSMutableArray" id="Wwe-QE-LJt"/>
@@ -29,25 +30,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u8r-ko-Bd5">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-Nz-mCe" userLabel="top">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="284"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0SA-p4-i4r">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="284"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-vb-fVo">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="255.33333333333334"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="224.33333333333334"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-BZ-L6n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="146.66666666666666" height="255.33333333333334"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="146.66666666666666" height="224.33333333333334"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="146.66666666666666" id="rP3-1z-6GI"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9B-a7-mor">
-                                                    <rect key="frame" x="146.66666666666663" y="0.0" width="246.33333333333337" height="255.33333333333334"/>
+                                                    <rect key="frame" x="146.66666666666663" y="0.0" width="246.33333333333337" height="224.33333333333334"/>
                                                     <string key="text">What year was the year, 
 when first deodorant
 was invented in our life?</string>
@@ -58,7 +59,7 @@ was invented in our life?</string>
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xr-op-v87">
-                                            <rect key="frame" x="0.0" y="255.33333333333334" width="393" height="28.666666666666657"/>
+                                            <rect key="frame" x="0.0" y="224.33333333333331" width="393" height="28.666666666666657"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-JW-iLa">
                                                     <rect key="frame" x="0.0" y="0.0" width="290" height="28.666666666666668"/>
@@ -91,10 +92,10 @@ was invented in our life?</string>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
-                            <rect key="frame" x="0.0" y="284" width="393" height="284"/>
+                            <rect key="frame" x="0.0" y="253" width="393" height="253"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="70.333333333333329"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="62.666666666666664"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     <connections>
@@ -102,7 +103,7 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="B" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJo-8k-SqY" userLabel="ButtonB">
-                                    <rect key="frame" x="0.0" y="71.333333333333314" width="393" height="70.333333333333314"/>
+                                    <rect key="frame" x="0.0" y="63.666666666666686" width="393" height="62.333333333333343"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     <connections>
@@ -110,7 +111,7 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="C" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-nf-rky" userLabel="ButtonC">
-                                    <rect key="frame" x="0.0" y="142.66666666666669" width="393" height="70"/>
+                                    <rect key="frame" x="0.0" y="127.00000000000001" width="393" height="62.666666666666671"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     <connections>
@@ -118,7 +119,7 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="D" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-T3-0dG" userLabel="ButtonD">
-                                    <rect key="frame" x="0.0" y="213.66666666666669" width="393" height="70.333333333333314"/>
+                                    <rect key="frame" x="0.0" y="190.66666666666669" width="393" height="62.333333333333343"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                     <connections>
@@ -128,13 +129,13 @@ was invented in our life?</string>
                             </subviews>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4g-NZ-zdg" userLabel="bot">
-                            <rect key="frame" x="0.0" y="568" width="393" height="284"/>
+                            <rect key="frame" x="0.0" y="506" width="393" height="253"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="284"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="253"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8A-dp-m8F" userLabel="helpHallView">
-                                            <rect key="frame" x="0.0" y="0.0" width="131" height="284"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="131" height="253"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpFifty" translatesAutoresizingMaskIntoConstraints="NO" id="ePA-Hy-zkD">
                                                     <rect key="frame" x="20" y="20" width="105" height="85"/>
@@ -143,7 +144,7 @@ was invented in our life?</string>
                                             </subviews>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVN-Pc-azD" userLabel="helpCallView">
-                                            <rect key="frame" x="131" y="0.0" width="131" height="284"/>
+                                            <rect key="frame" x="131" y="0.0" width="131" height="253"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpHall" translatesAutoresizingMaskIntoConstraints="NO" id="2x1-Hz-3dj">
                                                     <rect key="frame" x="20" y="20" width="105" height="81"/>
@@ -152,7 +153,7 @@ was invented in our life?</string>
                                             </subviews>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-kN-e3f" userLabel="helpFiftyView">
-                                            <rect key="frame" x="262" y="0.0" width="131" height="284"/>
+                                            <rect key="frame" x="262" y="0.0" width="131" height="253"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpCall" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-H2-eCb">
                                                     <rect key="frame" x="20" y="20" width="105" height="81"/>
@@ -172,6 +173,9 @@ was invented in our life?</string>
                         </view>
                     </subviews>
                 </stackView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H9A-zQ-0uK">
+                    <rect key="frame" x="0.0" y="814" width="393" height="4"/>
+                </progressView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,8 +185,11 @@ was invented in our life?</string>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u8r-ko-Bd5" secondAttribute="bottom" id="DKJ-oF-Dsn"/>
                 <constraint firstItem="TY9-4H-pUe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NvB-Kd-FDv"/>
                 <constraint firstItem="u8r-ko-Bd5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YB6-Je-CJb"/>
+                <constraint firstItem="H9A-zQ-0uK" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zgh-PF-e5f"/>
                 <constraint firstItem="u8r-ko-Bd5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dFx-Xp-isM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H9A-zQ-0uK" secondAttribute="trailing" id="lhj-nG-Gk1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u8r-ko-Bd5" secondAttribute="trailing" id="mJe-cK-oEy"/>
+                <constraint firstItem="H9A-zQ-0uK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rCr-h6-vfI"/>
                 <constraint firstItem="TY9-4H-pUe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sfM-8G-fSc"/>
             </constraints>
             <point key="canvasLocation" x="-156.4885496183206" y="18.30985915492958"/>

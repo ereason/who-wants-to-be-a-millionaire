@@ -9,13 +9,23 @@ import UIKit
 
 class GuesViewController: UIViewController {
 
+    @IBOutlet weak var inputName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func startQuiz(_ sender: Any) {
+        let controller = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
+        controller.modalPresentationStyle = .fullScreen
+        
+        controller.quizBrain = MillionareBrain(userName: inputName.text ?? "Guest")
+        controller.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(controller, animated: false)
+    }
+    
     /*
     // MARK: - Navigation
 
