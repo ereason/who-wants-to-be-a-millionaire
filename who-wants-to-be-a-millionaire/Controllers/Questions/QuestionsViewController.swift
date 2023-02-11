@@ -47,6 +47,7 @@ class QuestionsViewController: UIViewController {
                 let controller = RewardsScreenViewController(nibName: "RewardsScreenViewController",
                                                              bundle: nil)
                 controller.progress = self.quizBrain.GetQuestionNumber()
+                controller.isTrue = true
                 controller.modalPresentationStyle = .fullScreen
                 self.present(controller, animated: true, completion: nil)
                 self.quizBrain.NextQuestion()
