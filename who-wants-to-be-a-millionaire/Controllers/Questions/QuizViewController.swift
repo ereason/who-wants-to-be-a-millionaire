@@ -6,7 +6,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var QuestionNumLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var answerButtons: [UIButton]!
+    @IBOutlet var answerButtons: [AnswerButton]!
     @IBOutlet weak var timeIndicaror: UIProgressView!
     
     @IBOutlet weak var halfToHalf: UIButton!
@@ -50,20 +50,35 @@ class QuizViewController: UIViewController {
         }
     }
     
-    @IBAction func ButtonPresses(_ sender: UIButton) {
-        answerButtons.forEach({$0.isEnabled = false})
+    @IBAction func ButtonPresses(_ sender: AnswerButton) {
+        answerButtons.forEach {$0.isEnabled = false}
         let userAnswer = sender.tag
         let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]
         timer.invalidate()
         self.setSound(soundName: "waiting")
+        
+        //
+        sender.tapEffect()
+        sender.yellowLayer.isHidden = false
+        print(sender.tag)
+        
+       // sender.redLayer.isHidden = false //так красим кнопку
+        
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: { [self] in
             
             self.player?.stop()
             
             if (userGotItRight.isCorrect) {
                 self.openProgressView(soundName: "rightAnswer", isAnswerCorrect: false)
+                sender.greenLayer.isHidden = false
+
             } else {
                 self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
+                sender.redLayer.isHidden = false
+                                
+                quizBrain.getQuestionAnswers()[userAnswer].isCorrect
+                // + найти кнопку правильную и подсветить *.greenLayer.isHidden = false
             }
         })
         
@@ -92,9 +107,13 @@ class QuizViewController: UIViewController {
         QuestionNumLabel.text = getQuestionLabel
         
         answerButtons.forEach({
-            $0.setTitle(quizBrain.getQuestionAnswers()[$0.tag].answer, for: .normal)
+//            $0.setTitle(quizBrain.getQuestionAnswers()[$0.tag].answer, for: .normal)
+            $0.labelRight.text = quizBrain.getQuestionAnswers()[$0.tag].answer
             $0.isEnabled = true
             $0.backgroundColor = UIColor.clear
+            $0.yellowLayer.isHidden = true
+            $0.redLayer.isHidden = true
+            $0.greenLayer.isHidden = true
         })
     }
     

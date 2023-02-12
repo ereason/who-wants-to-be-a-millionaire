@@ -98,43 +98,43 @@ was invented in our life?</string>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
                             <rect key="frame" x="0.0" y="333.66666666666669" width="373" height="215.00000000000006"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA">
+                                <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="f4E-OG-VXD"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <buttonConfiguration key="configuration" style="plain" title="Button" subtitle="A">
                                         <backgroundConfiguration key="background" image="Rectangle blue"/>
                                     </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="26p-sE-DqU"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="B" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJo-8k-SqY" userLabel="ButtonB">
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="B" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJo-8k-SqY" userLabel="ButtonB" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="55" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <buttonConfiguration key="configuration" style="plain" title="Button" subtitle="B">
                                         <backgroundConfiguration key="background" image="Rectangle blue"/>
                                     </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="KcU-UA-8nH"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="C" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-nf-rky" userLabel="ButtonC">
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="C" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChN-nf-rky" userLabel="ButtonC" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="110" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <buttonConfiguration key="configuration" style="plain" title="Button" subtitle="C">
                                         <backgroundConfiguration key="background" image="Rectangle blue"/>
                                     </buttonConfiguration>
                                     <connections>
                                         <action selector="ButtonPresses:" destination="-1" eventType="touchUpInside" id="Fyo-FV-prL"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="D" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-T3-0dG" userLabel="ButtonD">
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="249" restorationIdentifier="D" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-T3-0dG" userLabel="ButtonD" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="164.99999999999994" width="373" height="50"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <buttonConfiguration key="configuration" style="plain" title="Button" subtitle="D">
                                         <backgroundConfiguration key="background" image="Rectangle blue"/>
                                     </buttonConfiguration>
                                     <connections>
