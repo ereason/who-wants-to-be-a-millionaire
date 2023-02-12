@@ -10,7 +10,7 @@ class LoseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scoreLabel.text = String(quizBrain.getScore())
+        scoreLabel.text = String(quizBrain.getPrice())
         titleLable.text = quizBrain.getUsername()
         print(quizBrain.getUsername())
     }

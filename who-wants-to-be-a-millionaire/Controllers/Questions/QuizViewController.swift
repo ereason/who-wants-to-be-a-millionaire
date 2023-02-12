@@ -12,6 +12,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var halfToHalf: UIButton!
     @IBOutlet weak var viewersHelp: UIButton!
     @IBOutlet weak var callHelp: UIButton!
+    @IBOutlet weak var protectionHelp: UIButton!
     
     var player: AVAudioPlayer?
     var quizBrain: MillionareBrain!
@@ -50,6 +51,7 @@ class QuizViewController: UIViewController {
             timer.invalidate()
         }
     }
+    var isProtected:Bool = false
     
     @IBAction func ButtonPresses(_ sender: AnswerButton) {
         answerButtons.forEach({$0.isEnabled = false})
@@ -76,13 +78,23 @@ class QuizViewController: UIViewController {
                 sender.greenLayer.isHidden = false
 
             } else {
-                self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
-                sender.redLayer.isHidden = false
-                                
-                let id = quizBrain.getQuestionAnswers().first( where: { $0.value.isCorrect } )?.key
-                answerButtons[id!].greenLayer.isHidden = false
                 
-                // + найти кнопку правильную и подсветить *.greenLayer.isHidden = false
+                if(!isProtected){
+                    self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
+                    sender.redLayer.isHidden = false
+                    
+                    let id = quizBrain.getQuestionAnswers().first( where: { $0.value.isCorrect } )?.key
+                    answerButtons[id!].greenLayer.isHidden = false
+                }else{
+                    
+                    self.setSound(soundName: "wrongAnswer" )
+                    sender.redLayer.isHidden = false
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute: { [self] in
+                        quizBrain.removeAnswer(key: userAnswer)
+                        self.updateUI()
+                    })
+                }
+                                                  
             }
         })
         
@@ -145,7 +157,7 @@ class QuizViewController: UIViewController {
     
     
     var getScoreLabel: String {
-        return String(quizBrain.getScore())+" руб."
+        return String(quizBrain.getPrice())+" руб."
     }
     
     var getQuestionLabel: String {
@@ -200,16 +212,28 @@ class QuizViewController: UIViewController {
         callHelp.isEnabled = false
     }
     
+    @IBAction func protectionHelpPressed(_ sender: UIButton) {
+    
+       
+        sender.setBackgroundImage(UIImage(named: "usedMistakeHelp.png"), for: .normal)
+     //   quizBrain.helps["mistake"] = false
+        protectionHelp.isEnabled = false
+        
+        self.isProtected = true
+    }
+    
     func updateStatusHelpBt() {
         callHelp.isEnabled = quizBrain.helps["call"]!
         viewersHelp.isEnabled = quizBrain.helps["view"]!
         halfToHalf.isEnabled = quizBrain.helps["fifty"]!
+        protectionHelp.isEnabled =  quizBrain.helps["mistake"]!
     }
     
     func blockStatusHelpBt(status: Bool) {
         callHelp.isEnabled = status
         viewersHelp.isEnabled = status
         halfToHalf.isEnabled = status
+        protectionHelp.isEnabled = status
     }
     
     func setButtonsVisable(){

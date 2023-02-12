@@ -8,10 +8,11 @@ class MillionareBrain {
     var helps: [String : Bool] = [
         "fifty": true,
         "call": true,
-        "view": true]
+        "view": true,
+        "mistake":true]
     
     private var questionNumber: Int
-    private var score: Int
+    private var score: Int = 0
     private let costsOfQuestions: [Int] = [
         100,
         200,
@@ -32,7 +33,7 @@ class MillionareBrain {
     
     public init(userName:String) {
         self.userName=userName
-        score = 0
+     
         questions = Question.getQuestions()
         questionNumber = 0
         questionAnswers = [:]
@@ -40,8 +41,8 @@ class MillionareBrain {
     }
     
     
-    func getScore() -> Int {
-        return score
+    func getPrice() -> Int {
+        return costsOfQuestions[questionNumber]
     }
     
     func getQuestionNumber() -> Int {
@@ -54,6 +55,9 @@ class MillionareBrain {
     
     func getQuestionAnswers() -> [Int:(answer: String, isCorrect: Bool)] {
         return questionAnswers
+    }
+    func removeAnswer(key: Int) {
+        questionAnswers.removeValue(forKey: key)
     }
     
     func getUsername() -> String {
@@ -80,8 +84,6 @@ class MillionareBrain {
     }
     
     func goToNextQuestion() {
-        score += costsOfQuestions[questionNumber]
-        
         if questionNumber < questions.count - 1 {
             questionNumber += 1
             self.randomizeAnswers()
@@ -90,8 +92,10 @@ class MillionareBrain {
     
     func fiftyHelp() -> (Int,Int){
         
-        var a = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
-        var b = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
+        let a = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
+        let b = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
+        print(a)
+        print(b)
         questionAnswers.removeValue(forKey: a)
         questionAnswers.removeValue(forKey: b)
 
@@ -113,5 +117,11 @@ class MillionareBrain {
         } else {
             return questionAnswers.filter({!$0.value.isCorrect}).randomElement()!.key
         }
+    }
+    
+    func getFinalScore() -> Int {
+       return questionNumber - questionNumber%5 == 0
+        ? 0
+        : costsOfQuestions[questionNumber - questionNumber%5]
     }
 }

@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFAudio
+import Foundation
 
 class ProgressViewController: UIViewController {
     
@@ -40,6 +41,10 @@ class ProgressViewController: UIViewController {
     }
     
     @IBAction func getMoney(_ sender: Any) {
+        
+        //quizBrain.getFinalScore()
+        
+        
         let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         controller.navigationItem.hidesBackButton = true
@@ -87,5 +92,16 @@ class ProgressViewController: UIViewController {
         else {
             backgroundImages[index].image = UIImage(named: "Rectangle red")
         }
+    }
+    
+
+
+    func saveResult(){
+        // Access Shared Defaults Object
+        let userDefaults = UserDefaults.standard
+
+        // Create and Write Array of Strings
+        let array = ["One", "Two", "Three"]
+        userDefaults.set(array, forKey: "myKey")
     }
 }

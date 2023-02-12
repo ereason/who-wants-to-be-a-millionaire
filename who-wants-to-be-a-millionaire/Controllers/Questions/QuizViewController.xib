@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -14,6 +15,7 @@
                 <outlet property="QuestionNumLabel" destination="0Ag-JW-iLa" id="hT6-8C-HfY"/>
                 <outlet property="callHelp" destination="aJ8-5a-nM4" id="dUC-IK-iRk"/>
                 <outlet property="halfToHalf" destination="bjQ-gT-hEq" id="lbz-UX-Uwc"/>
+                <outlet property="protectionHelp" destination="64h-oh-a8h" id="JMr-s0-uqT"/>
                 <outlet property="questionLabel" destination="j9B-a7-mor" id="DCt-Db-hQM"/>
                 <outlet property="scoreLabel" destination="fpp-op-GiO" id="HMD-F3-1JW"/>
                 <outlet property="timeIndicaror" destination="H9A-zQ-0uK" id="51v-aa-eZ7"/>
@@ -143,11 +145,11 @@ was invented in our life?</string>
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
                             <rect key="frame" x="0.0" y="618.33333333333337" width="373" height="75"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-gT-hEq">
-                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="75"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="75"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="75" id="YAh-8I-ckj"/>
                                     </constraints>
@@ -158,7 +160,7 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-TC-P3f">
-                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="75"/>
+                                    <rect key="frame" x="95.666666666666686" y="0.0" width="86.333333333333314" height="75"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" backgroundImage="helpHall"/>
                                     <connections>
@@ -166,11 +168,19 @@ was invented in our life?</string>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-5a-nM4">
-                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="75"/>
+                                    <rect key="frame" x="191" y="0.0" width="86.666666666666686" height="75"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" backgroundImage="helpCall"/>
                                     <connections>
                                         <action selector="callHelpPressed:" destination="-1" eventType="touchUpInside" id="S5X-rp-YgR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64h-oh-a8h">
+                                    <rect key="frame" x="286.66666666666669" y="0.0" width="86.333333333333314" height="75"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="mistakeHelp"/>
+                                    <connections>
+                                        <action selector="protectionHelpPressed:" destination="-1" eventType="touchUpInside" id="VHC-Tg-hPY"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -203,6 +213,7 @@ was invented in our life?</string>
         <image name="helpFifty" width="105" height="81"/>
         <image name="helpHall" width="105" height="85"/>
         <image name="logo" width="201" height="201"/>
+        <image name="mistakeHelp" width="105" height="81"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
