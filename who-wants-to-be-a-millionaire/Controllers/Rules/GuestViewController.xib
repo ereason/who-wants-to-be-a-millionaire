@@ -50,13 +50,13 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-5X-h0G">
-                    <rect key="frame" x="137.33333333333334" y="718" width="118.33333333333334" height="50"/>
+                    <rect key="frame" x="138.33333333333334" y="718" width="116.33333333333334" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="RDI-j4-5br"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Выйти"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Выйти">
+                    <buttonConfiguration key="configuration" style="filled" title="Назад">
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>

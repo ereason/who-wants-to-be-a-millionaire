@@ -23,14 +23,11 @@
 		048A08F22995204B00304FA7 /* GuestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048A08F02995204B00304FA7 /* GuestViewController.xib */; };
 		04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE539E2992C15000EED0CD /* RulesViewController.swift */; };
 		04CE53A12992C15000EED0CD /* RulesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE539F2992C15000EED0CD /* RulesViewController.xib */; };
-		5E1D95C12997A6B4009D6ADE /* startQuestion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95B92997A6B3009D6ADE /* startQuestion.mp3 */; };
 		5E1D95C22997A6B4009D6ADE /* wrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BA2997A6B3009D6ADE /* wrongAnswer.mp3 */; };
 		5E1D95C32997A6B4009D6ADE /* waiting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BB2997A6B3009D6ADE /* waiting.mp3 */; };
 		5E1D95C42997A6B4009D6ADE /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BC2997A6B3009D6ADE /* bg.mp3 */; };
-		5E1D95C52997A6B4009D6ADE /* bg2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BD2997A6B4009D6ADE /* bg2.mp3 */; };
+		5E1D95C52997A6B4009D6ADE /* calmBG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BD2997A6B4009D6ADE /* calmBG.mp3 */; };
 		5E1D95C62997A6B4009D6ADE /* rightAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BE2997A6B4009D6ADE /* rightAnswer.mp3 */; };
-		5E1D95C72997A6B4009D6ADE /* muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95BF2997A6B4009D6ADE /* muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3 */; };
-		5E1D95C82997A6B4009D6ADE /* zvuk-zastavki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E1D95C02997A6B4009D6ADE /* zvuk-zastavki.mp3 */; };
 		5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */; };
 		5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */; };
 		5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFF0C36298FD0F200A5F125 /* Assets.xcassets */; };
@@ -62,14 +59,11 @@
 		048A08F02995204B00304FA7 /* GuestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GuestViewController.xib; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuestViewController.xib"; sourceTree = SOURCE_ROOT; };
 		04CE539E2992C15000EED0CD /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		04CE539F2992C15000EED0CD /* RulesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesViewController.xib; sourceTree = "<group>"; };
-		5E1D95B92997A6B3009D6ADE /* startQuestion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startQuestion.mp3; sourceTree = "<group>"; };
 		5E1D95BA2997A6B3009D6ADE /* wrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswer.mp3; sourceTree = "<group>"; };
 		5E1D95BB2997A6B3009D6ADE /* waiting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = waiting.mp3; sourceTree = "<group>"; };
 		5E1D95BC2997A6B3009D6ADE /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
-		5E1D95BD2997A6B4009D6ADE /* bg2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg2.mp3; sourceTree = "<group>"; };
+		5E1D95BD2997A6B4009D6ADE /* calmBG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calmBG.mp3; sourceTree = "<group>"; };
 		5E1D95BE2997A6B4009D6ADE /* rightAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rightAnswer.mp3; sourceTree = "<group>"; };
-		5E1D95BF2997A6B4009D6ADE /* muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3"; sourceTree = "<group>"; };
-		5E1D95C02997A6B4009D6ADE /* zvuk-zastavki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "zvuk-zastavki.mp3"; sourceTree = "<group>"; };
 		5EFF0C2A298FD0F000A5F125 /* who-wants-to-be-a-millionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "who-wants-to-be-a-millionaire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,14 +175,11 @@
 		5EF83DBA29975D1000B8D84B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				5E1D95BF2997A6B4009D6ADE /* muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3 */,
 				5E1D95BB2997A6B3009D6ADE /* waiting.mp3 */,
 				5E1D95BE2997A6B4009D6ADE /* rightAnswer.mp3 */,
-				5E1D95B92997A6B3009D6ADE /* startQuestion.mp3 */,
 				5E1D95BC2997A6B3009D6ADE /* bg.mp3 */,
 				5E1D95BA2997A6B3009D6ADE /* wrongAnswer.mp3 */,
-				5E1D95BD2997A6B4009D6ADE /* bg2.mp3 */,
-				5E1D95C02997A6B4009D6ADE /* zvuk-zastavki.mp3 */,
+				5E1D95BD2997A6B4009D6ADE /* calmBG.mp3 */,
 				02074E1E299753C70049B917 /* thinking.mp3 */,
 			);
 			path = Sounds;
@@ -321,18 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43E8F7329916F700066453B /* ProgressViewController.xib in Resources */,
-				5E1D95C52997A6B4009D6ADE /* bg2.mp3 in Resources */,
+				5E1D95C52997A6B4009D6ADE /* calmBG.mp3 in Resources */,
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
 				02074E1D299744B90049B917 /* README.md in Resources */,
-				5E1D95C12997A6B4009D6ADE /* startQuestion.mp3 in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
 				02074E1F299753C70049B917 /* thinking.mp3 in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
 				5E1D95C62997A6B4009D6ADE /* rightAnswer.mp3 in Resources */,
-				5E1D95C72997A6B4009D6ADE /* muzyika-uje-posereznee-na-50-000-5269-1?_=3.mp3 in Resources */,
 				5E1D95C42997A6B4009D6ADE /* bg.mp3 in Resources */,
 				5E1D95C32997A6B4009D6ADE /* waiting.mp3 in Resources */,
-				5E1D95C82997A6B4009D6ADE /* zvuk-zastavki.mp3 in Resources */,
 				048A08F22995204B00304FA7 /* GuestViewController.xib in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				84C3405E2992CC290024130C /* QuizViewController.xib in Resources */,

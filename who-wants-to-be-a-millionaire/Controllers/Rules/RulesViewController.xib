@@ -35,7 +35,7 @@
                         <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="M2l-2L-CmP"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2x-he-HaP">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2x-he-HaP">
                     <rect key="frame" x="10" y="69" width="373" height="674"/>
                     <string key="text">Правила игры “Кто хочет стать миллионером?”
 
@@ -83,7 +83,7 @@
 
 Игра для интеллектуалов “Кто хочет стать миллионером?” доступна в онлайн режиме и создана энтузиастами, которые ценят всю силу умственного развития. Дерзайте и попробуйте выиграть свой первый миллион рублей.</string>
                     <color key="textColor" name="AccentColor"/>
-                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>

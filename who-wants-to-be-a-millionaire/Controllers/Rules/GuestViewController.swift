@@ -1,10 +1,3 @@
-//
-//  GuesViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by mac on 09.02.2023.
-//
-
 import UIKit
 
 class GuestViewController: UIViewController {

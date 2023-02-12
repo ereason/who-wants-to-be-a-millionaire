@@ -1,7 +1,7 @@
 import Foundation
 
 class MillionareBrain {
-  
+    
     private var userName: String
     private var questions: [Question]
     private var questionAnswers: [Int:(answer: String, isCorrect: Bool)]
@@ -33,7 +33,6 @@ class MillionareBrain {
     
     public init(userName:String) {
         self.userName=userName
-     
         questions = Question.getQuestions()
         questionNumber = 0
         questionAnswers = [:]
@@ -65,22 +64,22 @@ class MillionareBrain {
     }
     
     private func randomizeAnswers() {
-       
+        
         var buff: [(answer: String, isCorrect: Bool)] = []
         
         questions[questionNumber].wrongAnswers.forEach { str in
             buff.append((str, false))
         }
         buff.append((questions[questionNumber].correctAnswer, true))
-       
+        
         buff.shuffle()
         
         
         for i in 0..<buff.count{
-    
+            
             questionAnswers[i] = buff[i]
         }
-    
+        
     }
     
     func goToNextQuestion() {
@@ -90,24 +89,22 @@ class MillionareBrain {
         }
     }
     
-    func fiftyHelp() -> (Int,Int){
+    func fiftyFiftyHelp() -> (Int,Int){
         
-        let a = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
-        let b = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
-        print(a)
-        print(b)
-        questionAnswers.removeValue(forKey: a)
-        questionAnswers.removeValue(forKey: b)
-
-
-        return (a,b)
+        let pickedWrongAnswers = questionAnswers.filter({!$0.value.isCorrect}).keys.shuffled().prefix(2)
+    
+        questionAnswers.removeValue(forKey: pickedWrongAnswers[0])
+        questionAnswers.removeValue(forKey: pickedWrongAnswers[1])
+        
+        
+        return  (pickedWrongAnswers[0], pickedWrongAnswers[1])
     }
     
-    func callHelp() -> Int {
+    func callFriendHelp() -> Int {
         return getCorrectAnswerWithChanse(percent: 80)
     }
     
-    func askHelp() -> Int {
+    func viewerskHelp() -> Int {
         return getCorrectAnswerWithChanse(percent: 50)
     }
     
@@ -120,7 +117,7 @@ class MillionareBrain {
     }
     
     func getFinalScore() -> Int {
-       return questionNumber - questionNumber%5 == 0
+        return questionNumber - questionNumber%5 == 0
         ? 0
         : costsOfQuestions[questionNumber - questionNumber%5]
     }

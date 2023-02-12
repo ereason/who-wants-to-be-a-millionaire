@@ -9,7 +9,7 @@ class LoseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scoreLabel.text = "Вы заработали \(quizBrain.getPrice()) рублей."
+        scoreLabel.text = "Вы заработали \(quizBrain.getFinalScore()) рублей."
     }
 
     @IBAction func playAgainTapped(_ sender: UIButton) {

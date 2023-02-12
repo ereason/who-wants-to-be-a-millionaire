@@ -20,7 +20,7 @@ class QuizViewController: UIViewController {
     var totalTime = 30
     var secondsPassed = 0
     var isTimerStoped = false
-    var isProtected:Bool = false
+    var isProtectedFromMistake:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class QuizViewController: UIViewController {
         player?.numberOfLoops = -1
         setSound(soundName: "thinking",startTime: 0)
         startTimer()
+        isProtectedFromMistake = false
      
     }
     
@@ -41,6 +42,8 @@ class QuizViewController: UIViewController {
             player.play()
             startTimer()
         }
+        
+        isProtectedFromMistake = false
         updateUI()
     }
     
@@ -65,12 +68,9 @@ class QuizViewController: UIViewController {
         let continueTime = player?.currentTime
         self.setSound(soundName: "waiting", startTime: 0)
         
-        //
         sender.tapEffect()
         sender.yellowLayer.isHidden = false
        
-
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: { [self] in
             
             self.player?.stop()
@@ -81,7 +81,7 @@ class QuizViewController: UIViewController {
 
             } else {
                 
-                if(!isProtected){
+                if(!isProtectedFromMistake){
                     self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
                     sender.redLayer.isHidden = false
                     
@@ -94,7 +94,7 @@ class QuizViewController: UIViewController {
                     DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2000), execute: { [self] in
                         quizBrain.removeAnswer(key: userAnswer)
                         sender.isHidden = true
-                        self.isProtected = false
+                        self.isProtectedFromMistake = false
                         updateStatusHelpBt()
                         answerButtons.forEach({$0.isEnabled = true})
                         self.setSound(soundName: "thinking", startTime: continueTime)
@@ -193,7 +193,7 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
-        let res = quizBrain.fiftyHelp()
+        let res = quizBrain.fiftyFiftyHelp()
         answerButtons[res.0].isHidden = true;
         answerButtons[res.1].isHidden = true;
         sender.setBackgroundImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
@@ -203,7 +203,7 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
-        let res = quizBrain.askHelp()
+        let res = quizBrain.viewerskHelp()
         answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpHall.png"), for: .normal)
         quizBrain.helps["view"] = false
@@ -211,7 +211,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
-        let res = quizBrain.callHelp()
+        let res = quizBrain.callFriendHelp()
         answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpCall.png"), for: .normal)
         quizBrain.helps["call"] = false
@@ -222,7 +222,7 @@ class QuizViewController: UIViewController {
         sender.setBackgroundImage(UIImage(named: "usedMistakeHelp.png"), for: .normal)
         protectionHelp.isEnabled = false
         quizBrain.helps["mistake"] = false
-        self.isProtected = true
+        self.isProtectedFromMistake = true
     }
     
     func updateStatusHelpBt() {

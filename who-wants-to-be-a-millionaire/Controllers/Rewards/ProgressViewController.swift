@@ -1,10 +1,3 @@
-//
-//  RewardsScreenViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Герман Кунин on 06.02.2023.
-//
-
 import UIKit
 import AVFAudio
 import Foundation
@@ -23,7 +16,7 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.isEnabled = !isEnd
-        playSound(soundName: "bg2")
+        playSound(soundName: "calmBG")
         setupView()
     }
     
