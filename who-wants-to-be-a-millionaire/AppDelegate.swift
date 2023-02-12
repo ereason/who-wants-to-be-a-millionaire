@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by George on 05.02.2023.
-//
-
 import UIKit
 
 @main
