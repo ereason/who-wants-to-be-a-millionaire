@@ -1,10 +1,3 @@
-//
-//  StartViewController.swift
-//  who-wants-to-be-a-millionaire
-//
-//  Created by Админ on 07.02.2023.
-//
-
 import UIKit
 
 class StartViewController: UIViewController {
@@ -32,7 +25,6 @@ class StartViewController: UIViewController {
         controller.modalPresentationStyle = .fullScreen
         controller.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(controller, animated: false)
-       // self.present(controller, animated: true, completion: nil)
     }
     
 }

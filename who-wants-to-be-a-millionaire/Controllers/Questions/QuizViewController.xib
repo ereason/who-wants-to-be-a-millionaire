@@ -45,16 +45,16 @@
                                     <rect key="frame" x="0.0" y="0.0" width="373" height="280"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-vb-fVo">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="251.33333333333334"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="253.66666666666666"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="RrF-BZ-L6n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="251.33333333333334"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="253.66666666666666"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="rP3-1z-6GI"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9B-a7-mor">
-                                                    <rect key="frame" x="120" y="0.0" width="253" height="251.33333333333334"/>
+                                                    <rect key="frame" x="120" y="0.0" width="253" height="253.66666666666666"/>
                                                     <string key="text">What year was the year, 
 when first deodorant
 was invented in our life?</string>
@@ -65,23 +65,23 @@ was invented in our life?</string>
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6xr-op-v87">
-                                            <rect key="frame" x="0.0" y="251.33333333333329" width="373" height="28.666666666666657"/>
+                                            <rect key="frame" x="0.0" y="253.66666666666671" width="373" height="26.333333333333343"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-JW-iLa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="28.666666666666668"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос № 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-JW-iLa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="26.333333333333332"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="7Vn-c1-FHC"/>
+                                                        <constraint firstAttribute="width" constant="150" id="7Vn-c1-FHC"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500  RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpp-op-GiO">
-                                                    <rect key="frame" x="223" y="0.0" width="150" height="28.666666666666668"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 RUB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpp-op-GiO">
+                                                    <rect key="frame" x="223" y="0.0" width="150" height="26.333333333333332"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="lxv-Mz-F8M"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

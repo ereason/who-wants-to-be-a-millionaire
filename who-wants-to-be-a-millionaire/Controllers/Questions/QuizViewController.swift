@@ -62,7 +62,7 @@ class QuizViewController: UIViewController {
         let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]?.isCorrect
         
         isTimerStoped = true
-        var continueTime = player?.currentTime
+        let continueTime = player?.currentTime
         self.setSound(soundName: "waiting", startTime: 0)
         
         //
@@ -193,7 +193,7 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
-        var res = quizBrain.fiftyHelp()
+        let res = quizBrain.fiftyHelp()
         answerButtons[res.0].isHidden = true;
         answerButtons[res.1].isHidden = true;
         sender.setBackgroundImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
@@ -203,7 +203,7 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
-        var res = quizBrain.askHelp()
+        let res = quizBrain.askHelp()
         answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpHall.png"), for: .normal)
         quizBrain.helps["view"] = false
@@ -211,7 +211,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
-        var res = quizBrain.callHelp()
+        let res = quizBrain.callHelp()
         answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpCall.png"), for: .normal)
         quizBrain.helps["call"] = false

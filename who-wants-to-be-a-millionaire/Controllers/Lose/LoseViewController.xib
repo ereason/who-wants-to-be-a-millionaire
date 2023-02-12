@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -11,7 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoseViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
                 <outlet property="scoreLabel" destination="9bY-ZX-RAc" id="ubJ-jJ-EeA"/>
-                <outlet property="titleLable" destination="1LM-M8-qgi" id="Ne4-sc-bMH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,8 +30,8 @@
                         <constraint firstAttribute="height" constant="100" id="ADX-vD-CH1"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="PLAY AGAIN" cornerStyle="medium">
-                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="36"/>
+                    <buttonConfiguration key="configuration" style="filled" title="В меню" cornerStyle="medium">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
@@ -45,21 +45,14 @@
                         <constraint firstAttribute="height" constant="201" id="Bnu-wu-gxj"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You losed on 5 attempt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-M8-qgi">
-                    <rect key="frame" x="78" y="284" width="237" height="29"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You losed on 5 attempt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bY-ZX-RAc">
+                    <rect key="frame" x="78" y="476" width="237" height="29"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You losed on 5 attempt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bY-ZX-RAc">
-                    <rect key="frame" x="78" y="411" width="237" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOSE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHe-nl-0ez">
-                    <rect key="frame" x="136.66666666666666" y="314" width="119.99999999999997" height="60"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Конец игры" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHe-nl-0ez">
+                    <rect key="frame" x="0.0" y="379" width="393" height="60"/>
                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                     <color key="textColor" red="0.96470588235294119" green="0.38823529411764707" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -68,18 +61,21 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fHe-nl-0ez" firstAttribute="top" secondItem="1LM-M8-qgi" secondAttribute="bottom" constant="1" id="1q3-S5-XUc"/>
+                <constraint firstItem="9bY-ZX-RAc" firstAttribute="top" secondItem="fHe-nl-0ez" secondAttribute="bottom" constant="37" id="02N-JJ-OYo"/>
+                <constraint firstItem="fHe-nl-0ez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Aq-E7-OC5"/>
                 <constraint firstAttribute="bottom" secondItem="n58-MY-G0f" secondAttribute="bottom" id="8hX-DK-J0X"/>
+                <constraint firstItem="fHe-nl-0ez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="90F-1D-Dqa"/>
                 <constraint firstItem="RWr-0X-fj8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9rK-ca-YVM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fHe-nl-0ez" secondAttribute="trailing" id="BAX-d7-mtM"/>
                 <constraint firstItem="fHe-nl-0ez" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BOm-ne-fCX"/>
                 <constraint firstItem="n58-MY-G0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gu1-qx-Jt1"/>
+                <constraint firstItem="fHe-nl-0ez" firstAttribute="top" secondItem="RWr-0X-fj8" secondAttribute="bottom" constant="100" id="PtB-ZP-Thy"/>
                 <constraint firstItem="RWr-0X-fj8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="19" id="Y6J-fW-5GO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oyn-oh-ZQM" secondAttribute="bottom" constant="84" id="Z0h-zd-XIA"/>
                 <constraint firstItem="n58-MY-G0f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="faD-JL-QDN"/>
                 <constraint firstItem="n58-MY-G0f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ftR-M5-pVk"/>
-                <constraint firstItem="1LM-M8-qgi" firstAttribute="top" secondItem="RWr-0X-fj8" secondAttribute="bottom" constant="5" id="oGQ-de-rgD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oyn-oh-ZQM" secondAttribute="trailing" constant="52" id="sLK-E3-eLX"/>
-                <constraint firstItem="1LM-M8-qgi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vgk-Ca-QIQ"/>
+                <constraint firstItem="fHe-nl-0ez" firstAttribute="centerX" secondItem="9bY-ZX-RAc" secondAttribute="centerX" id="uUB-Bf-6XQ"/>
                 <constraint firstItem="Oyn-oh-ZQM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="52" id="yIN-0s-VZM"/>
             </constraints>
             <point key="canvasLocation" x="75.572519083969468" y="20.422535211267608"/>

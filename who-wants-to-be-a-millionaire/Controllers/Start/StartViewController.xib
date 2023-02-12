@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -27,23 +28,21 @@
                         <constraint firstAttribute="width" constant="201" id="2bG-Al-lSs"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d60-Ph-gII">
-                    <rect key="frame" x="59" y="350" width="275.33333333333331" height="81.333333333333314"/>
-                    <string key="text">Who  Wants 
-to be a Millionaire </string>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d60-Ph-gII">
+                    <rect key="frame" x="34.333333333333343" y="350" width="324.66666666666663" height="40.666666666666686"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                     <size key="shadowOffset" width="0.0" height="0.0"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-1X-XKt">
-                    <rect key="frame" x="136" y="718" width="121" height="50"/>
+                    <rect key="frame" x="132" y="718" width="129.33333333333337" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="ps7-Zg-rcE"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Начать">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
@@ -51,13 +50,13 @@ to be a Millionaire </string>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5U-IK-CH2">
-                    <rect key="frame" x="98" y="648" width="197" height="50"/>
+                    <rect key="frame" x="80.666666666666671" y="648" width="231.66666666666663" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Jzc-Gr-Q3R"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Правила игры">
-                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
@@ -65,13 +64,13 @@ to be a Millionaire </string>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-me-Km8">
-                    <rect key="frame" x="113.66666666666669" y="578" width="166" height="50"/>
+                    <rect key="frame" x="99.333333333333329" y="578" width="194.33333333333337" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="z9a-Fi-z89"/>
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Результаты">
-                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>

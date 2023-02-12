@@ -2,7 +2,9 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,13 +36,13 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3Z-lc-ehH">
-                    <rect key="frame" x="63.666666666666657" y="648" width="266" height="50"/>
+                    <rect key="frame" x="141" y="648" width="111.33333333333331" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="nAp-Gt-bgn"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Зарегистрируйтесь">
-                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Старт">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
@@ -48,27 +50,38 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUe-5X-h0G">
-                    <rect key="frame" x="141.66666666666666" y="718" width="110" height="50"/>
+                    <rect key="frame" x="137.33333333333334" y="718" width="118.33333333333334" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="RDI-j4-5br"/>
                     </constraints>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Выйти"/>
                     <buttonConfiguration key="configuration" style="filled" title="Выйти">
-                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                         <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="goBack:" destination="-1" eventType="touchUpInside" id="Cc4-nS-k7J"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1je-Bn-1WS">
+                    <rect key="frame" x="0.0" y="301" width="393" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="gv6-WS-Soo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <color key="textColor" name="AccentColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="SMr-HZ-efR"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="Dh0-Er-Y8Y" firstAttribute="top" secondItem="XFQ-lL-isB" secondAttribute="top" id="71M-eQ-2am"/>
+                <constraint firstItem="1je-Bn-1WS" firstAttribute="leading" secondItem="SMr-HZ-efR" secondAttribute="leading" id="L7r-yE-RCJ"/>
                 <constraint firstItem="SMr-HZ-efR" firstAttribute="bottom" secondItem="cUe-5X-h0G" secondAttribute="bottom" constant="50" id="LyS-H7-QMz"/>
                 <constraint firstItem="4d8-OL-xuU" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="MeI-ZB-cgx"/>
+                <constraint firstItem="3rR-Vp-lkN" firstAttribute="top" secondItem="1je-Bn-1WS" secondAttribute="bottom" constant="8" id="Muz-lJ-Uxe"/>
                 <constraint firstItem="cUe-5X-h0G" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="Oog-Rc-RoV"/>
                 <constraint firstItem="R3Z-lc-ehH" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" id="Pq9-b4-090"/>
                 <constraint firstItem="3rR-Vp-lkN" firstAttribute="centerY" secondItem="XFQ-lL-isB" secondAttribute="centerY" id="RJE-VC-4yT"/>
@@ -78,6 +91,7 @@
                 <constraint firstAttribute="bottom" secondItem="Dh0-Er-Y8Y" secondAttribute="bottom" id="azY-JL-VIw"/>
                 <constraint firstItem="3rR-Vp-lkN" firstAttribute="centerX" secondItem="XFQ-lL-isB" secondAttribute="centerX" constant="-3.5" id="bD5-Yb-0Hz"/>
                 <constraint firstItem="Dh0-Er-Y8Y" firstAttribute="leading" secondItem="XFQ-lL-isB" secondAttribute="leading" id="iIp-Mz-rVl"/>
+                <constraint firstItem="SMr-HZ-efR" firstAttribute="trailing" secondItem="1je-Bn-1WS" secondAttribute="trailing" id="jcf-8u-P3V"/>
             </constraints>
             <point key="canvasLocation" x="-25.190839694656489" y="19.718309859154932"/>
         </view>
@@ -85,6 +99,9 @@
     <resources>
         <image name="background" width="414" height="736"/>
         <image name="logo" width="201" height="201"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
