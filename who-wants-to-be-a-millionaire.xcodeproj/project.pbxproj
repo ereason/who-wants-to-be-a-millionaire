@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		02074E1D299744B90049B917 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 02074E1C299744B80049B917 /* README.md */; };
 		02074E1F299753C70049B917 /* thinking.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 02074E1E299753C70049B917 /* thinking.mp3 */; };
+		023ED9112998039700817FF8 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED90F2998039700817FF8 /* WelcomeScreenViewController.swift */; };
+		023ED9122998039700817FF8 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023ED9102998039700817FF8 /* WelcomeScreenViewController.xib */; };
+		023ED9152998068B00817FF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED9142998068B00817FF8 /* Constants.swift */; };
+		023ED9192998099400817FF8 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED9172998099400817FF8 /* RegisterScreenViewController.swift */; };
+		023ED91A2998099400817FF8 /* RegisterScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023ED9182998099400817FF8 /* RegisterScreenViewController.xib */; };
+		023ED91E29980CAC00817FF8 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED91C29980CAC00817FF8 /* GameScreenViewController.swift */; };
+		023ED91F29980CAC00817FF8 /* GameScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023ED91D29980CAC00817FF8 /* GameScreenViewController.xib */; };
+		023ED924299816F400817FF8 /* LoseScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED922299816F400817FF8 /* LoseScreenViewController.swift */; };
+		023ED925299816F400817FF8 /* LoseScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023ED923299816F400817FF8 /* LoseScreenViewController.xib */; };
+		023ED9282998171200817FF8 /* WinScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED9262998171200817FF8 /* WinScreenViewController.swift */; };
+		023ED9292998171200817FF8 /* WinScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 023ED9272998171200817FF8 /* WinScreenViewController.xib */; };
+		023ED92C299825C900817FF8 /* AnswersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023ED92B299825C900817FF8 /* AnswersButton.swift */; };
 		027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027F965A2991E2F900B1B738 /* MillionareBrain.swift */; };
 		0285E53B29901F3000032476 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0285E53A29901F3000032476 /* questions.json */; };
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
@@ -34,6 +46,18 @@
 /* Begin PBXFileReference section */
 		02074E1C299744B80049B917 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		02074E1E299753C70049B917 /* thinking.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thinking.mp3; sourceTree = "<group>"; };
+		023ED90F2998039700817FF8 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		023ED9102998039700817FF8 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenViewController.xib; sourceTree = "<group>"; };
+		023ED9142998068B00817FF8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		023ED9172998099400817FF8 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
+		023ED9182998099400817FF8 /* RegisterScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterScreenViewController.xib; sourceTree = "<group>"; };
+		023ED91C29980CAC00817FF8 /* GameScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
+		023ED91D29980CAC00817FF8 /* GameScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameScreenViewController.xib; sourceTree = "<group>"; };
+		023ED922299816F400817FF8 /* LoseScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseScreenViewController.swift; sourceTree = "<group>"; };
+		023ED923299816F400817FF8 /* LoseScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseScreenViewController.xib; sourceTree = "<group>"; };
+		023ED9262998171200817FF8 /* WinScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScreenViewController.swift; sourceTree = "<group>"; };
+		023ED9272998171200817FF8 /* WinScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WinScreenViewController.xib; sourceTree = "<group>"; };
+		023ED92B299825C900817FF8 /* AnswersButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersButton.swift; sourceTree = "<group>"; };
 		027F965A2991E2F900B1B738 /* MillionareBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionareBrain.swift; sourceTree = "<group>"; };
 		0285E53A29901F3000032476 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -69,6 +93,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023ED90D2998001A00817FF8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				023ED92A2998258E00817FF8 /* Views */,
+				023ED921299816D200817FF8 /* Win */,
+				023ED920299816C700817FF8 /* Lose */,
+				023ED91B29980C9600817FF8 /* Game */,
+				023ED9162998097C00817FF8 /* Register */,
+				023ED90E2998037900817FF8 /* Welcome */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		023ED90E2998037900817FF8 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				023ED90F2998039700817FF8 /* WelcomeScreenViewController.swift */,
+				023ED9102998039700817FF8 /* WelcomeScreenViewController.xib */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		023ED9132998067700817FF8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				023ED92B299825C900817FF8 /* AnswersButton.swift */,
+				023ED9142998068B00817FF8 /* Constants.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		023ED9162998097C00817FF8 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				023ED9172998099400817FF8 /* RegisterScreenViewController.swift */,
+				023ED9182998099400817FF8 /* RegisterScreenViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		023ED91B29980C9600817FF8 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				023ED91C29980CAC00817FF8 /* GameScreenViewController.swift */,
+				023ED91D29980CAC00817FF8 /* GameScreenViewController.xib */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		023ED920299816C700817FF8 /* Lose */ = {
+			isa = PBXGroup;
+			children = (
+				023ED922299816F400817FF8 /* LoseScreenViewController.swift */,
+				023ED923299816F400817FF8 /* LoseScreenViewController.xib */,
+			);
+			path = Lose;
+			sourceTree = "<group>";
+		};
+		023ED921299816D200817FF8 /* Win */ = {
+			isa = PBXGroup;
+			children = (
+				023ED9262998171200817FF8 /* WinScreenViewController.swift */,
+				023ED9272998171200817FF8 /* WinScreenViewController.xib */,
+			);
+			path = Win;
+			sourceTree = "<group>";
+		};
+		023ED92A2998258E00817FF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0285E53929901F2600032476 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +254,8 @@
 		5EFF0C2C298FD0F000A5F125 /* who-wants-to-be-a-millionaire */ = {
 			isa = PBXGroup;
 			children = (
+				023ED9132998067700817FF8 /* Core */,
+				023ED90D2998001A00817FF8 /* Screens */,
 				5EFF0C2D298FD0F000A5F125 /* AppDelegate.swift */,
 				5EFF0C2F298FD0F000A5F125 /* SceneDelegate.swift */,
 				0285E53929901F2600032476 /* Model */,
@@ -265,9 +365,14 @@
 				C43E8F7329916F700066453B /* RewardsScreenViewController.xib in Resources */,
 				8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */,
 				02074E1D299744B90049B917 /* README.md in Resources */,
+				023ED91A2998099400817FF8 /* RegisterScreenViewController.xib in Resources */,
+				023ED9122998039700817FF8 /* WelcomeScreenViewController.xib in Resources */,
+				023ED925299816F400817FF8 /* LoseScreenViewController.xib in Resources */,
 				5EFF0C3A298FD0F200A5F125 /* LaunchScreen.storyboard in Resources */,
 				02074E1F299753C70049B917 /* thinking.mp3 in Resources */,
 				0285E53B29901F3000032476 /* questions.json in Resources */,
+				023ED9292998171200817FF8 /* WinScreenViewController.xib in Resources */,
+				023ED91F29980CAC00817FF8 /* GameScreenViewController.xib in Resources */,
 				048A08F22995204B00304FA7 /* GuesViewController.xib in Resources */,
 				5EFF0C37298FD0F200A5F125 /* Assets.xcassets in Resources */,
 				84C3405E2992CC290024130C /* QuestionsViewController.xib in Resources */,
@@ -283,13 +388,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023ED91E29980CAC00817FF8 /* GameScreenViewController.swift in Sources */,
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
 				C43E8F7229916F700066453B /* RewardsScreenViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				AAAD33F22994F05F00CAA30C /* AnswerButton.swift in Sources */,
+				023ED92C299825C900817FF8 /* AnswersButton.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
+				023ED9192998099400817FF8 /* RegisterScreenViewController.swift in Sources */,
+				023ED9112998039700817FF8 /* WelcomeScreenViewController.swift in Sources */,
 				84C3405D2992CC290024130C /* QuestionsViewController.swift in Sources */,
+				023ED9282998171200817FF8 /* WinScreenViewController.swift in Sources */,
+				023ED9152998068B00817FF8 /* Constants.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
+				023ED924299816F400817FF8 /* LoseScreenViewController.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */,
 				048A08F12995204B00304FA7 /* GuesViewController.swift in Sources */,
