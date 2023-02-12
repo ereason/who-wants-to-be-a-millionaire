@@ -4,11 +4,11 @@ class MillionareBrain {
   
     private var userName: String
     private var questions: [Question]
-    private var questionAnswers: [(answer: String, isCorrect: Bool)]
+    private var questionAnswers: [Int:(answer: String, isCorrect: Bool)]
     var helps: [String : Bool] = [
-        "fifty": false,
-        "call": false,
-        "view": false]
+        "fifty": true,
+        "call": true,
+        "view": true]
     
     private var questionNumber: Int
     private var score: Int
@@ -35,7 +35,7 @@ class MillionareBrain {
         score = 0
         questions = Question.getQuestions()
         questionNumber = 0
-        questionAnswers = []
+        questionAnswers = [:]
         self.randomizeAnswers()
     }
     
@@ -52,7 +52,7 @@ class MillionareBrain {
         return questions[questionNumber].ask
     }
     
-    func getQuestionAnswers() -> [(answer: String, isCorrect: Bool)] {
+    func getQuestionAnswers() -> [Int:(answer: String, isCorrect: Bool)] {
         return questionAnswers
     }
     
@@ -61,12 +61,22 @@ class MillionareBrain {
     }
     
     private func randomizeAnswers() {
-        questionAnswers.removeAll()
+       
+        var buff: [(answer: String, isCorrect: Bool)] = []
+        
         questions[questionNumber].wrongAnswers.forEach { str in
-            questionAnswers.append((str, false))
+            buff.append((str, false))
         }
-        questionAnswers.append((questions[questionNumber].correctAnswer, true))
-        questionAnswers.shuffle()
+        buff.append((questions[questionNumber].correctAnswer, true))
+       
+        buff.shuffle()
+        
+        
+        for i in 0..<buff.count{
+    
+            questionAnswers[i] = buff[i]
+        }
+    
     }
     
     func goToNextQuestion() {
@@ -78,21 +88,23 @@ class MillionareBrain {
         }
     }
     
-    func callHelp() -> String {
+    func fiftyHelp(){
+//questionAnswers.filter({!$0.value.isCorrect})
+    }
+    
+    func callHelp() -> Int {
         return getCorrectAnswerWithChanse(percent: 80)
     }
     
-    func askHelp() -> String {
+    func askHelp() -> Int {
         return getCorrectAnswerWithChanse(percent: 50)
     }
     
-    func getCorrectAnswerWithChanse(percent: Int) -> String {
+    func getCorrectAnswerWithChanse(percent: Int) -> Int {
         if (Int.random(in: 1...100) < percent) {
-            return questions[questionNumber].correctAnswer
-            //questionAnswers.first(where: {$0.isCorrect})!.answer
+            return questionAnswers.first(where: {$0.value.isCorrect})!.key
         } else {
-            return questions[questionNumber].wrongAnswers.randomElement() ?? ""
-            //questionAnswers.filter{!$0.isCorrect}.randomElement()!.answer
+            return questionAnswers.filter({!$0.value.isCorrect}).randomElement()!.key
         }
     }
 }

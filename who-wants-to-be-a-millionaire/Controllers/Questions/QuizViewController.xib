@@ -96,7 +96,7 @@ was invented in our life?</string>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
-                            <rect key="frame" x="0.0" y="333.66666666666669" width="373" height="215.00000000000006"/>
+                            <rect key="frame" x="0.0" y="341.66666666666669" width="373" height="215.00000000000006"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
@@ -144,28 +144,31 @@ was invented in our life?</string>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
-                            <rect key="frame" x="0.0" y="602.33333333333337" width="373" height="99"/>
+                            <rect key="frame" x="0.0" y="618.33333333333337" width="373" height="75"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-gT-hEq">
-                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="99"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="helpFifty"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="75"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="75" id="YAh-8I-ckj"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="helpFifty"/>
                                     <connections>
                                         <action selector="halfToHalpPressed:" destination="-1" eventType="touchUpInside" id="joh-zU-RAy"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7d-TC-P3f">
-                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="99"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="helpHall"/>
+                                    <rect key="frame" x="124.33333333333334" y="0.0" width="124.33333333333334" height="75"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="helpHall"/>
                                     <connections>
                                         <action selector="viewersHelpPressed:" destination="-1" eventType="touchUpInside" id="44f-Ft-j2d"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ8-5a-nM4">
-                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="99"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="helpCall"/>
+                                    <rect key="frame" x="248.66666666666671" y="0.0" width="124.33333333333334" height="75"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" backgroundImage="helpCall"/>
                                     <connections>
                                         <action selector="callHelpPressed:" destination="-1" eventType="touchUpInside" id="S5X-rp-YgR"/>
                                     </connections>
