@@ -11,15 +11,15 @@ class GameScreenViewController: UIViewController {
     }
     
     @IBAction func answerTapped(_ sender: UIButton) {
-//        if answer {
-//            let controller = WinScreenViewController(nibName: "WinScreenViewController", bundle: nil)
-//            controller.modalPresentationStyle = .fullScreen
-//            present(controller, animated: true)
-//        } else {
-//            answer = true
-//            let controller = LoseScreenViewController(nibName: "LoseScreenViewController", bundle: nil)
-//            navigationController?.pushViewController(controller, animated: true)
-//            
-//        }
+        if answer {
+            let controller = WinScreenViewController(nibName: "WinScreenViewController", bundle: nil)
+            controller.modalPresentationStyle = .fullScreen
+            present(controller, animated: true)
+        } else {
+            answer = true
+            let controller = LoseScreenViewController(nibName: "LoseScreenViewController", bundle: nil)
+            navigationController?.pushViewController(controller, animated: true)
+            
+        }
     }
 }
