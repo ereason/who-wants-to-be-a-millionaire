@@ -27,6 +27,7 @@ class QuizViewController: UIViewController {
         setSound(soundName: "thinking")
         player?.play()
         startTimer()
+     
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,15 +53,18 @@ class QuizViewController: UIViewController {
     
     @IBAction func ButtonPresses(_ sender: UIButton) {
         answerButtons.forEach({$0.isEnabled = false})
-        let userAnswer = sender.tag
-        let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]
+        blockStatusHelpBt(status: false)
+        
+        let userAnswer = Int(sender.tag)
+        let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]?.isCorrect
+        
         timer.invalidate()
         self.setSound(soundName: "waiting")
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: { [self] in
             
             self.player?.stop()
             
-            if (userGotItRight.isCorrect) {
+            if (userGotItRight!) {
                 self.openProgressView(soundName: "rightAnswer", isAnswerCorrect: false)
             } else {
                 self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
@@ -91,8 +95,10 @@ class QuizViewController: UIViewController {
         scoreLabel.text = getScoreLabel
         QuestionNumLabel.text = getQuestionLabel
         
+        updateStatusHelpBt()
+        
         answerButtons.forEach({
-            $0.setTitle(quizBrain.getQuestionAnswers()[$0.tag].answer, for: .normal)
+            $0.setTitle(quizBrain.getQuestionAnswers()[Int($0.tag)]?.answer, for: .normal)
             $0.isEnabled = true
             $0.backgroundColor = UIColor.clear
         })
@@ -145,9 +151,12 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
+    
+        //quizBrain.
         
-        halfToHalf.setImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
-        quizBrain.helps["fifty"] = true
+        
+        sender.setBackgroundImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
+        quizBrain.helps["fifty"] = false
         halfToHalf.isEnabled = false
     }
     
@@ -155,27 +164,34 @@ class QuizViewController: UIViewController {
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
         var res = quizBrain.askHelp()
         
-        answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
+        //заменить на хайлайт
+        answerButtons[res].isEnabled = false
         
-        viewersHelp.setImage(UIImage(named: "usedHelpHall.png"), for: .normal)
-        quizBrain.helps["view"] = true
-        halfToHalf.isEnabled = false
+        sender.setBackgroundImage(UIImage(named: "usedHelpHall.png"), for: .normal)
+        quizBrain.helps["view"] = false
+        viewersHelp.isEnabled = false
     }
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
         var res = quizBrain.callHelp()
-        print(res)
-       
-        answerButtons.first(where: {$0.titleLabel?.text == res})?.layer.borderColor = UIColor.red.cgColor
-        
-        callHelp.setImage(UIImage(named: "usedHelpCall.png"), for: .normal)
-        
-        quizBrain.helps["call"] = true
-        halfToHalf.isEnabled = false
+    
+        //заменить на хайлайт
+        answerButtons[res].isEnabled = false
+    
+        sender.setBackgroundImage(UIImage(named: "usedHelpCall.png"), for: .normal)
+        quizBrain.helps["call"] = false
+        callHelp.isEnabled = false
     }
     
-    func blockButtons(status: Bool) {
-        
-        
+    func updateStatusHelpBt() {
+        callHelp.isEnabled = quizBrain.helps["call"]!
+        viewersHelp.isEnabled = quizBrain.helps["view"]!
+        halfToHalf.isEnabled = quizBrain.helps["fifty"]!
+    }
+    
+    func blockStatusHelpBt(status: Bool) {
+        callHelp.isEnabled = status
+        viewersHelp.isEnabled = status
+        halfToHalf.isEnabled = status
     }
 }

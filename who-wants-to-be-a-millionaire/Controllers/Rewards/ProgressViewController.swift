@@ -45,7 +45,6 @@ class ProgressViewController: UIViewController {
         controller.navigationItem.hidesBackButton = true
         controller.quizBrain = self.quizBrain
         self.navigationController?.pushViewController(controller, animated: false)
-        //present(controller, animated: true)
         
     }
     
