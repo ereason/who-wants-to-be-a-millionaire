@@ -21,87 +21,65 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-u1-qa6">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ET-u3-Lbm">
-                    <rect key="frame" x="90.666666666666671" y="605.66666666666663" width="211.66666666666663" height="38.333333333333371"/>
-                    <attributedString key="attributedText">
-                        <fragment content="Правила  игры">
-                            <attributes>
-                                <color key="NSColor" systemColor="systemGreenColor"/>
-                                <font key="NSFont" metaFont="system" size="32"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                <integer key="NSUnderline" value="1"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqD-K9-b0M">
-                    <rect key="frame" x="121" y="687" width="151" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="81I-Gx-kdo"/>
-                    </constraints>
-                    <attributedString key="attributedText">
-                        <fragment content="Start game">
-                            <attributes>
-                                <color key="NSColor" systemColor="systemGreenColor"/>
-                                <font key="NSFont" metaFont="system" size="32"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                <integer key="NSUnderline" value="1"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kbM-ux-hqX">
-                    <rect key="frame" x="96" y="119" width="201" height="225"/>
+                    <rect key="frame" x="96" y="119" width="201" height="201"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="225" id="VlQ-Jd-ZYz"/>
+                        <constraint firstAttribute="width" constant="201" id="2bG-Al-lSs"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d60-Ph-gII">
-                    <rect key="frame" x="59" y="417.33333333333331" width="275.33333333333331" height="81.333333333333314"/>
-                    <string key="text">to Who  Wants 
+                    <rect key="frame" x="59" y="350" width="275.33333333333331" height="81.333333333333314"/>
+                    <string key="text">Who  Wants 
 to be a Millionaire </string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                     <size key="shadowOffset" width="0.0" height="0.0"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkB-yg-zwk">
-                    <rect key="frame" x="119" y="562" width="134" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-1X-XKt">
+                    <rect key="frame" x="136" y="718" width="121" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ps7-Zg-rcE"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="правила игры"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Начать">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                        <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="rulesButtomTapped:" destination="-1" eventType="touchUpInside" id="B6c-VK-Zsq"/>
+                        <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="KUw-cN-R8U"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNK-ar-wni">
-                    <rect key="frame" x="166" y="652" width="62" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5U-IK-CH2">
+                    <rect key="frame" x="98" y="648" width="197" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Jzc-Gr-Q3R"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Правила игры">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
                     <connections>
-                        <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="riW-BY-Crd"/>
+                        <action selector="rulesButtomTapped:" destination="-1" eventType="touchUpInside" id="6iv-j4-3Pe"/>
                     </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="yqD-K9-b0M" firstAttribute="top" secondItem="7ET-u3-Lbm" secondAttribute="bottom" constant="43" id="7xf-aC-cvq"/>
-                <constraint firstItem="7ET-u3-Lbm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DdB-VB-X2B"/>
-                <constraint firstAttribute="bottom" secondItem="8Sc-u1-qa6" secondAttribute="bottom" id="Epo-rU-fSG"/>
-                <constraint firstItem="kbM-ux-hqX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="Irw-g1-Mc6"/>
-                <constraint firstItem="d60-Ph-gII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rfc-bu-XLZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yqD-K9-b0M" secondAttribute="bottom" constant="81" id="V6w-fu-crw"/>
-                <constraint firstItem="8Sc-u1-qa6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VDe-Sg-LZd"/>
-                <constraint firstItem="yqD-K9-b0M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XbX-Yy-mAC"/>
-                <constraint firstItem="7ET-u3-Lbm" firstAttribute="top" secondItem="d60-Ph-gII" secondAttribute="bottom" constant="107" id="a3t-m5-9QP"/>
-                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g0e-P3-Tz7"/>
-                <constraint firstItem="8Sc-u1-qa6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="huX-kx-8Di"/>
-                <constraint firstItem="8Sc-u1-qa6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="krK-3P-Y6C"/>
-                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="d60-Ph-gII" secondAttribute="centerX" id="quS-4z-ge7"/>
+                <constraint firstItem="n5U-IK-CH2" firstAttribute="bottom" secondItem="NSz-1X-XKt" secondAttribute="bottom" constant="-70" id="4HE-6D-B6u"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="5We-6P-D4n"/>
+                <constraint firstItem="8Sc-u1-qa6" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Ch1-Vj-bbI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NSz-1X-XKt" secondAttribute="bottom" constant="50" id="ERg-36-eKk"/>
+                <constraint firstItem="d60-Ph-gII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HpS-Bs-SJP"/>
+                <constraint firstItem="8Sc-u1-qa6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OxG-ID-7fk"/>
+                <constraint firstAttribute="top" secondItem="8Sc-u1-qa6" secondAttribute="top" id="PkV-E8-7s2"/>
+                <constraint firstItem="n5U-IK-CH2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YnC-Fk-lSR"/>
+                <constraint firstItem="d60-Ph-gII" firstAttribute="top" secondItem="kbM-ux-hqX" secondAttribute="bottom" constant="30" id="dUj-aC-Mgr"/>
+                <constraint firstAttribute="trailing" secondItem="8Sc-u1-qa6" secondAttribute="trailing" id="kdG-Xz-99b"/>
+                <constraint firstItem="NSz-1X-XKt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qzB-A9-tdP"/>
+                <constraint firstItem="kbM-ux-hqX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yL2-ql-4Td"/>
             </constraints>
             <point key="canvasLocation" x="263.35877862595419" y="9.1549295774647899"/>
         </view>
@@ -111,9 +89,6 @@ to be a Millionaire </string>
         <image name="logo" width="201" height="201"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

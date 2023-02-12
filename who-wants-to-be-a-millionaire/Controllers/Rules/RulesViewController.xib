@@ -30,7 +30,7 @@
                         <color key="baseBackgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="cancelBut:" destination="-1" eventType="touchUpInside" id="JBF-PQ-jBz"/>
+                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="M2l-2L-CmP"/>
                     </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y2x-he-HaP">

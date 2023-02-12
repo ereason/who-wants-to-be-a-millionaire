@@ -11,20 +11,20 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
-        let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
+        let controller = RulesViewController(nibName: "RulesViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true)
     }
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
-        let controller = QuestionsViewController(nibName: "QuestionsViewController", bundle: nil)
+        let controller = GuestViewController(nibName: "GuestViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
-        self.present(controller, animated: true, completion: nil)
+        controller.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(controller, animated: false)
+       // self.present(controller, animated: true, completion: nil)
     }
     
 }

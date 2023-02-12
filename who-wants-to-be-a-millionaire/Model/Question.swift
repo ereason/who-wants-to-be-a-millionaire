@@ -3,10 +3,10 @@ import Foundation
 struct Question: Decodable {
     public let level: Int
     public let ask: String
-    public  let correctAnswer: String
+    public let correctAnswer: String
     public let wrongAnswers: [String]
     
-    static func questions() -> [Question] {
+    static func getQuestions() -> [Question] {
         if let url = Bundle.main.url(forResource: "questions",
                                      withExtension: "json") {
             do {
