@@ -11,6 +11,8 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserManager.shared.score = 5
+        print(UserManager.shared.score)
     }
 
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
