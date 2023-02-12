@@ -88,8 +88,15 @@ class MillionareBrain {
         }
     }
     
-    func fiftyHelp(){
-//questionAnswers.filter({!$0.value.isCorrect})
+    func fiftyHelp() -> (Int,Int){
+        
+        var a = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
+        var b = questionAnswers.filter({!$0.value.isCorrect}).keys.randomElement()!
+        questionAnswers.removeValue(forKey: a)
+        questionAnswers.removeValue(forKey: b)
+
+
+        return (a,b)
     }
     
     func callHelp() -> Int {

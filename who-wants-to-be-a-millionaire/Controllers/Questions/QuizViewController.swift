@@ -65,12 +65,7 @@ class QuizViewController: UIViewController {
         sender.tapEffect()
         sender.yellowLayer.isHidden = false
        
-        sender.layer.shadowColor = UIColor.green.cgColor // подсветить кнопку подсказки
-        
-        print(sender.tag)
-        
-       // sender.redLayer.isHidden = false //так красим кнопку
-        
+
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: { [self] in
             
@@ -115,7 +110,7 @@ class QuizViewController: UIViewController {
         QuestionNumLabel.text = getQuestionLabel
         
         updateStatusHelpBt()
-        
+        setButtonsVisable()
         answerButtons.forEach({
             $0.labelRight.text = quizBrain.getQuestionAnswers()[Int($0.tag)]?.answer
             $0.isEnabled = true
@@ -124,7 +119,6 @@ class QuizViewController: UIViewController {
             $0.redLayer.isHidden = true
             $0.greenLayer.isHidden = true
             $0.layer.shadowColor = UIColor.gray.cgColor
-
         })
     }
     
@@ -151,11 +145,11 @@ class QuizViewController: UIViewController {
     
     
     var getScoreLabel: String {
-        return String(quizBrain.getScore())+" RUB"
+        return String(quizBrain.getScore())+" руб."
     }
     
     var getQuestionLabel: String {
-        return "Question " + String(quizBrain.getQuestionNumber() + 1)
+        return "Вопрос № " + String(quizBrain.getQuestionNumber() + 1)
     }
     
     func setSound(soundName: String) {
@@ -176,8 +170,10 @@ class QuizViewController: UIViewController {
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
     
-        //quizBrain.
+        var res = quizBrain.fiftyHelp()
         
+        answerButtons[res.0].isHidden = true;
+        answerButtons[res.1].isHidden = true;
         
         sender.setBackgroundImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
         quizBrain.helps["fifty"] = false
@@ -188,8 +184,7 @@ class QuizViewController: UIViewController {
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
         var res = quizBrain.askHelp()
         
-        //заменить на хайлайт
-        answerButtons[res].isEnabled = false
+        answerButtons[res].layer.shadowColor = UIColor.green.cgColor //так красим кнопку
         
         sender.setBackgroundImage(UIImage(named: "usedHelpHall.png"), for: .normal)
         quizBrain.helps["view"] = false
@@ -198,10 +193,8 @@ class QuizViewController: UIViewController {
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
         var res = quizBrain.callHelp()
-    
-        //заменить на хайлайт
-        answerButtons[res].isEnabled = false
-    
+
+        answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpCall.png"), for: .normal)
         quizBrain.helps["call"] = false
         callHelp.isEnabled = false
@@ -217,5 +210,9 @@ class QuizViewController: UIViewController {
         callHelp.isEnabled = status
         viewersHelp.isEnabled = status
         halfToHalf.isEnabled = status
+    }
+    
+    func setButtonsVisable(){
+        answerButtons.forEach({$0.isHidden = false})
     }
 }
