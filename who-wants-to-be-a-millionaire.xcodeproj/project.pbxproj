@@ -16,6 +16,7 @@
 		02928EFB2998EAB500901D9A /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02928EF92998EAB500901D9A /* LeaderBoardViewController.swift */; };
 		02928EFC2998EAB500901D9A /* LeaderBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02928EFA2998EAB500901D9A /* LeaderBoardViewController.xib */; };
 		02928EFE2998F04900901D9A /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02928EFD2998F04900901D9A /* UserScore.swift */; };
+		02928F052999016A00901D9A /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02928F042999016A00901D9A /* LeaderBoardTableViewCell.swift */; };
 		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
 		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
 		048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A08EF2995204B00304FA7 /* GuestViewController.swift */; };
@@ -54,6 +55,7 @@
 		02928EF92998EAB500901D9A /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		02928EFA2998EAB500901D9A /* LeaderBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardViewController.xib; sourceTree = "<group>"; };
 		02928EFD2998F04900901D9A /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScore.swift; sourceTree = "<group>"; };
+		02928F042999016A00901D9A /* LeaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewCell.swift; sourceTree = "<group>"; };
 		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
 		048A08EF2995204B00304FA7 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuestViewController.swift; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuestViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -111,10 +113,19 @@
 		02928EF82998EA6300901D9A /* LeaderBoard */ = {
 			isa = PBXGroup;
 			children = (
+				02928EFF2998FD3B00901D9A /* View */,
 				02928EF92998EAB500901D9A /* LeaderBoardViewController.swift */,
 				02928EFA2998EAB500901D9A /* LeaderBoardViewController.xib */,
 			);
 			path = LeaderBoard;
+			sourceTree = "<group>";
+		};
+		02928EFF2998FD3B00901D9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02928F042999016A00901D9A /* LeaderBoardTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		02DAA51A29916C13004EA8FB /* Lose */ = {
@@ -340,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
+				02928F052999016A00901D9A /* LeaderBoardTableViewCell.swift in Sources */,
 				AA3708AB29985F48004479E6 /* Colors.swift in Sources */,
 				C43E8F7229916F700066453B /* ProgressViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
