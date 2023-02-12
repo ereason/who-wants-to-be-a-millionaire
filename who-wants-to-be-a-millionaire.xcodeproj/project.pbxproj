@@ -12,6 +12,9 @@
 		027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027F965A2991E2F900B1B738 /* MillionareBrain.swift */; };
 		0285E53B29901F3000032476 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 0285E53A29901F3000032476 /* questions.json */; };
 		0285E53D29901F5600032476 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285E53C29901F5600032476 /* Question.swift */; };
+		02928EF72998E68300901D9A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02928EF62998E68300901D9A /* UserManager.swift */; };
+		02928EFB2998EAB500901D9A /* LeaderBoard ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02928EF92998EAB500901D9A /* LeaderBoard ViewController.swift */; };
+		02928EFC2998EAB500901D9A /* LeaderBoard ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02928EFA2998EAB500901D9A /* LeaderBoard ViewController.xib */; };
 		02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DAA51B29916C2F004EA8FB /* LoseViewController.swift */; };
 		02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02DAA51C29916C2F004EA8FB /* LoseViewController.xib */; };
 		048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048A08EF2995204B00304FA7 /* GuestViewController.swift */; };
@@ -46,6 +49,9 @@
 		027F965A2991E2F900B1B738 /* MillionareBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillionareBrain.swift; sourceTree = "<group>"; };
 		0285E53A29901F3000032476 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		0285E53C29901F5600032476 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		02928EF62998E68300901D9A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		02928EF92998EAB500901D9A /* LeaderBoard ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LeaderBoard ViewController.swift"; sourceTree = "<group>"; };
+		02928EFA2998EAB500901D9A /* LeaderBoard ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "LeaderBoard ViewController.xib"; sourceTree = "<group>"; };
 		02DAA51B29916C2F004EA8FB /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		02DAA51C29916C2F004EA8FB /* LoseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoseViewController.xib; sourceTree = "<group>"; };
 		048A08EF2995204B00304FA7 /* GuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuestViewController.swift; path = "who-wants-to-be-a-millionaire/Controllers/Rules/GuestViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -94,8 +100,18 @@
 				0285E53C29901F5600032476 /* Question.swift */,
 				027F965A2991E2F900B1B738 /* MillionareBrain.swift */,
 				AA3708AA29985F48004479E6 /* Colors.swift */,
+				02928EF62998E68300901D9A /* UserManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		02928EF82998EA6300901D9A /* LeaderBoard */ = {
+			isa = PBXGroup;
+			children = (
+				02928EF92998EAB500901D9A /* LeaderBoard ViewController.swift */,
+				02928EFA2998EAB500901D9A /* LeaderBoard ViewController.xib */,
+			);
+			path = LeaderBoard;
 			sourceTree = "<group>";
 		};
 		02DAA51A29916C13004EA8FB /* Lose */ = {
@@ -137,6 +153,7 @@
 		5EB7872B298FD34A0086D2BE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				02928EF82998EA6300901D9A /* LeaderBoard */,
 				04D7759C29951F960077FA6E /* Guest */,
 				04CE539D2992C0F100EED0CD /* Rules */,
 				C460E0F02993CD5F00757359 /* Rewards */,
@@ -308,6 +325,7 @@
 				5E1D95C22997A6B4009D6ADE /* wrongAnswer.mp3 in Resources */,
 				02DAA51E29916C2F004EA8FB /* LoseViewController.xib in Resources */,
 				04CE53A12992C15000EED0CD /* RulesViewController.xib in Resources */,
+				02928EFC2998EAB500901D9A /* LeaderBoard ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,10 +342,12 @@
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				84C3405D2992CC290024130C /* QuizViewController.swift in Sources */,
+				02928EFB2998EAB500901D9A /* LeaderBoard ViewController.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
 				AA3708A929985E82004479E6 /* AnswerButton.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */,
+				02928EF72998E68300901D9A /* UserManager.swift in Sources */,
 				048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */,
 				5EFF0C30298FD0F000A5F125 /* SceneDelegate.swift in Sources */,
 			);

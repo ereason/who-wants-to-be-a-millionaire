@@ -18,8 +18,9 @@ class GuestViewController: UIViewController {
     @IBAction func startQuiz(_ sender: Any) {
         let controller = QuizViewController(nibName: "QuizViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
-        
-        controller.quizBrain = MillionareBrain(userName: inputName.text ?? "Guest")
+        let username = inputName.text ?? "Guest"
+        UserManager.shared.username = username
+        controller.quizBrain = MillionareBrain(userName: username)
         controller.navigationItem.hidesBackButton = true
         self.navigationController?.pushViewController(controller, animated: false)
     }
