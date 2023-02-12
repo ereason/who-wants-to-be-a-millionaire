@@ -34,6 +34,8 @@
 		8494DA6529928B1800AF1101 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8494DA6329928B1800AF1101 /* StartViewController.xib */; };
 		84C3405D2992CC290024130C /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C3405B2992CC290024130C /* QuizViewController.swift */; };
 		84C3405E2992CC290024130C /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C3405C2992CC290024130C /* QuizViewController.xib */; };
+		AA3708A929985E82004479E6 /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3708A829985E82004479E6 /* AnswerButton.swift */; };
+		AA3708AB29985F48004479E6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3708AA29985F48004479E6 /* Colors.swift */; };
 		C43E8F7229916F700066453B /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43E8F7029916F700066453B /* ProgressViewController.swift */; };
 		C43E8F7329916F700066453B /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C43E8F7129916F700066453B /* ProgressViewController.xib */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		8494DA6329928B1800AF1101 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		84C3405B2992CC290024130C /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		84C3405C2992CC290024130C /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		AA3708A829985E82004479E6 /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		AA3708AA29985F48004479E6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C43E8F7029916F700066453B /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		C43E8F7129916F700066453B /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +93,7 @@
 				0285E53A29901F3000032476 /* questions.json */,
 				0285E53C29901F5600032476 /* Question.swift */,
 				027F965A2991E2F900B1B738 /* MillionareBrain.swift */,
+				AA3708AA29985F48004479E6 /* Colors.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		5EB7872A298FD3360086D2BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA3708A729985E69004479E6 /* Button */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +212,14 @@
 				84C3405C2992CC290024130C /* QuizViewController.xib */,
 			);
 			path = Questions;
+			sourceTree = "<group>";
+		};
+		AA3708A729985E69004479E6 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				AA3708A829985E82004479E6 /* AnswerButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		C460E0F02993CD5F00757359 /* Rewards */ = {
@@ -305,11 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8494DA6429928B1800AF1101 /* StartViewController.swift in Sources */,
+				AA3708AB29985F48004479E6 /* Colors.swift in Sources */,
 				C43E8F7229916F700066453B /* ProgressViewController.swift in Sources */,
 				0285E53D29901F5600032476 /* Question.swift in Sources */,
 				5EFF0C2E298FD0F000A5F125 /* AppDelegate.swift in Sources */,
 				84C3405D2992CC290024130C /* QuizViewController.swift in Sources */,
 				02DAA51D29916C2F004EA8FB /* LoseViewController.swift in Sources */,
+				AA3708A929985E82004479E6 /* AnswerButton.swift in Sources */,
 				027F965B2991E2F900B1B738 /* MillionareBrain.swift in Sources */,
 				04CE53A02992C15000EED0CD /* RulesViewController.swift in Sources */,
 				048A08F12995204B00304FA7 /* GuestViewController.swift in Sources */,
