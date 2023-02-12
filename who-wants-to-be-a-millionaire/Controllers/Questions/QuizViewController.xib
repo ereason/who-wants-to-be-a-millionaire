@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -12,12 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizViewController" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
             <connections>
-                <outlet property="QuestionNumLabel" destination="0Ag-JW-iLa" id="hT6-8C-HfY"/>
                 <outlet property="callHelp" destination="aJ8-5a-nM4" id="dUC-IK-iRk"/>
                 <outlet property="halfToHalf" destination="bjQ-gT-hEq" id="lbz-UX-Uwc"/>
+                <outlet property="priceLabel" destination="fpp-op-GiO" id="HMD-F3-1JW"/>
                 <outlet property="protectionHelp" destination="64h-oh-a8h" id="JMr-s0-uqT"/>
                 <outlet property="questionLabel" destination="j9B-a7-mor" id="DCt-Db-hQM"/>
-                <outlet property="scoreLabel" destination="fpp-op-GiO" id="HMD-F3-1JW"/>
+                <outlet property="questionNumLabel" destination="0Ag-JW-iLa" id="hT6-8C-HfY"/>
                 <outlet property="timeIndicaror" destination="H9A-zQ-0uK" id="51v-aa-eZ7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewersHelp" destination="r7d-TC-P3f" id="JPl-wb-hQ2"/>
@@ -36,7 +34,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u8r-ko-Bd5">
-                    <rect key="frame" x="10" y="59" width="373" height="759"/>
+                    <rect key="frame" x="10" y="0.0" width="373" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-Nz-mCe" userLabel="top">
                             <rect key="frame" x="0.0" y="0.0" width="373" height="280"/>
@@ -65,7 +63,7 @@ was invented in our life?</string>
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6xr-op-v87">
-                                            <rect key="frame" x="0.0" y="251.33333333333329" width="373" height="28.666666666666657"/>
+                                            <rect key="frame" x="0.0" y="251.33333333333334" width="373" height="28.666666666666657"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-JW-iLa">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="28.666666666666668"/>
@@ -98,7 +96,7 @@ was invented in our life?</string>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-RC-gaK">
-                            <rect key="frame" x="0.0" y="341.66666666666669" width="373" height="215.00000000000006"/>
+                            <rect key="frame" x="0.0" y="372.66666666666669" width="373" height="215.00000000000006"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="A" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F55-8x-dxo" userLabel="ButtonA" customClass="AnswerButton" customModule="who_wants_to_be_a_millionaire" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
@@ -146,7 +144,7 @@ was invented in our life?</string>
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-Ef-Qu8" userLabel="helpsButtons">
-                            <rect key="frame" x="0.0" y="618.33333333333337" width="373" height="75"/>
+                            <rect key="frame" x="0.0" y="680.33333333333337" width="373" height="75"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-gT-hEq">
                                     <rect key="frame" x="0.0" y="0.0" width="86.666666666666671" height="75"/>
@@ -186,7 +184,7 @@ was invented in our life?</string>
                             </subviews>
                         </stackView>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H9A-zQ-0uK">
-                            <rect key="frame" x="0.0" y="755" width="373" height="4"/>
+                            <rect key="frame" x="0.0" y="848" width="373" height="4"/>
                         </progressView>
                     </subviews>
                 </stackView>

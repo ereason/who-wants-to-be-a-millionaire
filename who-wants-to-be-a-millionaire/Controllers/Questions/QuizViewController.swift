@@ -4,8 +4,8 @@ import AVFoundation
 class QuizViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var QuestionNumLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var questionNumLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet var answerButtons: [AnswerButton]!
     @IBOutlet weak var timeIndicaror: UIProgressView!
     
@@ -19,14 +19,15 @@ class QuizViewController: UIViewController {
     var timer = Timer()
     var totalTime = 30
     var secondsPassed = 0
+    var isTimerStoped = false
+    var isProtected:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         updateUI()
         player?.numberOfLoops = -1
-        setSound(soundName: "thinking")
-        player?.play()
+        setSound(soundName: "thinking",startTime: 0)
         startTimer()
      
     }
@@ -35,7 +36,7 @@ class QuizViewController: UIViewController {
         super.viewWillAppear(animated)
      
         if let player = player, !player.isPlaying {
-            setSound(soundName: "thinking")
+            setSound(soundName: "thinking",startTime: 0)
             player.currentTime = 0
             player.play()
             startTimer()
@@ -46,12 +47,12 @@ class QuizViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if let player = player {
-            
             player.stop()
             timer.invalidate()
         }
     }
-    var isProtected:Bool = false
+    
+
     
     @IBAction func ButtonPresses(_ sender: AnswerButton) {
         answerButtons.forEach({$0.isEnabled = false})
@@ -60,8 +61,9 @@ class QuizViewController: UIViewController {
         let userAnswer = Int(sender.tag)
         let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]?.isCorrect
         
-        timer.invalidate()
-        self.setSound(soundName: "waiting")
+        isTimerStoped = true
+        var continueTime = player?.currentTime
+        self.setSound(soundName: "waiting", startTime: 0)
         
         //
         sender.tapEffect()
@@ -87,11 +89,16 @@ class QuizViewController: UIViewController {
                     answerButtons[id!].greenLayer.isHidden = false
                 }else{
                     
-                    self.setSound(soundName: "wrongAnswer" )
-                    sender.redLayer.isHidden = false
-                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute: { [self] in
+                    self.setSound(soundName: "wrongAnswer",startTime: 0 )
+                
+                    DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2000), execute: { [self] in
                         quizBrain.removeAnswer(key: userAnswer)
-                        self.updateUI()
+                        sender.isHidden = true
+                        self.isProtected = false
+                        updateStatusHelpBt()
+                        answerButtons.forEach({$0.isEnabled = true})
+                        self.setSound(soundName: "thinking", startTime: continueTime)
+                        isTimerStoped = false
                     })
                 }
                                                   
@@ -101,7 +108,7 @@ class QuizViewController: UIViewController {
     }
     
     func openProgressView(soundName:String, isAnswerCorrect: Bool){
-        self.setSound(soundName: soundName )
+        self.setSound(soundName: soundName, startTime: 0 )
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000), execute: {
             
             let controller = ProgressViewController(nibName: "ProgressViewController",bundle: nil)
@@ -118,11 +125,12 @@ class QuizViewController: UIViewController {
     
     func updateUI() {
         questionLabel.text = quizBrain.getCurrentQuestion()
-        scoreLabel.text = getScoreLabel
-        QuestionNumLabel.text = getQuestionLabel
+        priceLabel.text = getScoreLabel
+        questionNumLabel.text = getQuestionLabel
         
         updateStatusHelpBt()
         setButtonsVisable()
+        
         answerButtons.forEach({
             $0.labelRight.text = quizBrain.getQuestionAnswers()[Int($0.tag)]?.answer
             $0.isEnabled = true
@@ -144,7 +152,9 @@ class QuizViewController: UIViewController {
     }
     
     @objc func updateTimer() {
-        if secondsPassed < totalTime {
+        if(!self.isTimerStoped){
+        
+            if secondsPassed < totalTime {
             secondsPassed += 1
             timeIndicaror.progress = Float(secondsPassed) / Float(totalTime)
             print(Float(secondsPassed) / Float(totalTime))
@@ -152,6 +162,8 @@ class QuizViewController: UIViewController {
             answerButtons.forEach({$0.isEnabled = false})
             openProgressView(soundName: "wrongAnswer", isAnswerCorrect: true)
             timer.invalidate()
+        }
+        
         }
     }
     
@@ -164,7 +176,7 @@ class QuizViewController: UIViewController {
         return "Вопрос № " + String(quizBrain.getQuestionNumber() + 1)
     }
     
-    func setSound(soundName: String) {
+    func setSound(soundName: String, startTime: TimeInterval?) {
         guard let path = Bundle.main.path(forResource: soundName, ofType:"mp3") else {
             return
         }
@@ -172,8 +184,8 @@ class QuizViewController: UIViewController {
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
+            player?.currentTime = startTime!
             player?.play()
-            
         } catch let error {
             print(error.localizedDescription)
         }
@@ -181,12 +193,9 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func halfToHalpPressed(_ sender: UIButton) {
-    
         var res = quizBrain.fiftyHelp()
-        
         answerButtons[res.0].isHidden = true;
         answerButtons[res.1].isHidden = true;
-        
         sender.setBackgroundImage(UIImage(named: "usedHelpFifty.png"), for: .normal)
         quizBrain.helps["fifty"] = false
         halfToHalf.isEnabled = false
@@ -195,9 +204,7 @@ class QuizViewController: UIViewController {
     
     @IBAction func viewersHelpPressed(_ sender: UIButton) {
         var res = quizBrain.askHelp()
-        
-        answerButtons[res].layer.shadowColor = UIColor.green.cgColor //так красим кнопку
-        
+        answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpHall.png"), for: .normal)
         quizBrain.helps["view"] = false
         viewersHelp.isEnabled = false
@@ -205,7 +212,6 @@ class QuizViewController: UIViewController {
     
     @IBAction func callHelpPressed(_ sender: UIButton) {
         var res = quizBrain.callHelp()
-
         answerButtons[res].layer.shadowColor = UIColor.green.cgColor
         sender.setBackgroundImage(UIImage(named: "usedHelpCall.png"), for: .normal)
         quizBrain.helps["call"] = false
@@ -213,12 +219,9 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func protectionHelpPressed(_ sender: UIButton) {
-    
-       
         sender.setBackgroundImage(UIImage(named: "usedMistakeHelp.png"), for: .normal)
-     //   quizBrain.helps["mistake"] = false
         protectionHelp.isEnabled = false
-        
+        quizBrain.helps["mistake"] = false
         self.isProtected = true
     }
     
