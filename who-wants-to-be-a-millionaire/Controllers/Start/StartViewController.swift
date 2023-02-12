@@ -15,6 +15,12 @@ class StartViewController: UIViewController {
         print(UserManager.shared.score)
     }
 
+    @IBAction func resultsTapped(_ sender: UIButton) {
+        let controller = LeaderBoardViewController(nibName: "LeaderBoardViewController", bundle: nil)
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true)
+    }
+    
     @IBAction func rulesButtomTapped(_ sender: UIButton) {
         let controller = RulesViewController(nibName: "RulesViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen

@@ -64,6 +64,20 @@ to be a Millionaire </string>
                         <action selector="rulesButtomTapped:" destination="-1" eventType="touchUpInside" id="6iv-j4-3Pe"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-me-Km8">
+                    <rect key="frame" x="113.66666666666669" y="578" width="166" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="z9a-Fi-z89"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Результаты">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="baseBackgroundColor" red="0.20392156859999999" green="0.72156862749999995" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="resultsTapped:" destination="-1" eventType="touchUpInside" id="ODT-Dd-P7J"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,7 +89,9 @@ to be a Millionaire </string>
                 <constraint firstItem="d60-Ph-gII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HpS-Bs-SJP"/>
                 <constraint firstItem="8Sc-u1-qa6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OxG-ID-7fk"/>
                 <constraint firstAttribute="top" secondItem="8Sc-u1-qa6" secondAttribute="top" id="PkV-E8-7s2"/>
+                <constraint firstItem="OOw-me-Km8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XSs-Eh-VJQ"/>
                 <constraint firstItem="n5U-IK-CH2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YnC-Fk-lSR"/>
+                <constraint firstItem="n5U-IK-CH2" firstAttribute="top" secondItem="OOw-me-Km8" secondAttribute="bottom" constant="20" id="dDf-p5-qFm"/>
                 <constraint firstItem="d60-Ph-gII" firstAttribute="top" secondItem="kbM-ux-hqX" secondAttribute="bottom" constant="30" id="dUj-aC-Mgr"/>
                 <constraint firstAttribute="trailing" secondItem="8Sc-u1-qa6" secondAttribute="trailing" id="kdG-Xz-99b"/>
                 <constraint firstItem="NSz-1X-XKt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qzB-A9-tdP"/>

@@ -41,10 +41,7 @@ class ProgressViewController: UIViewController {
     }
     
     @IBAction func getMoney(_ sender: Any) {
-        
-        //quizBrain.getFinalScore()
-        
-        
+        UserManager.shared.addScore(quizBrain.getFinalScore())
         let controller = LoseViewController(nibName: "LoseViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
         controller.navigationItem.hidesBackButton = true
