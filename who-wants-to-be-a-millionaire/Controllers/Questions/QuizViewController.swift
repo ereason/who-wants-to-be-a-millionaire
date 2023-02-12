@@ -51,20 +51,22 @@ class QuizViewController: UIViewController {
         }
     }
     
-    @IBAction func ButtonPresses(_ sender: UIButton) {
+    @IBAction func ButtonPresses(_ sender: AnswerButton) {
         answerButtons.forEach({$0.isEnabled = false})
         blockStatusHelpBt(status: false)
         
         let userAnswer = Int(sender.tag)
         let userGotItRight = quizBrain.getQuestionAnswers()[userAnswer]?.isCorrect
         
-
         timer.invalidate()
         self.setSound(soundName: "waiting")
         
         //
         sender.tapEffect()
         sender.yellowLayer.isHidden = false
+       
+        sender.layer.shadowColor = UIColor.green.cgColor // подсветить кнопку подсказки
+        
         print(sender.tag)
         
        // sender.redLayer.isHidden = false //так красим кнопку
@@ -82,7 +84,9 @@ class QuizViewController: UIViewController {
                 self.openProgressView(soundName:"wrongAnswer", isAnswerCorrect: true)
                 sender.redLayer.isHidden = false
                                 
-                quizBrain.getQuestionAnswers()[userAnswer].isCorrect
+                let id = quizBrain.getQuestionAnswers().first( where: { $0.value.isCorrect } )?.key
+                answerButtons[id!].greenLayer.isHidden = false
+                
                 // + найти кнопку правильную и подсветить *.greenLayer.isHidden = false
             }
         })
@@ -105,7 +109,6 @@ class QuizViewController: UIViewController {
         })
     }
     
-    
     func updateUI() {
         questionLabel.text = quizBrain.getCurrentQuestion()
         scoreLabel.text = getScoreLabel
@@ -114,12 +117,14 @@ class QuizViewController: UIViewController {
         updateStatusHelpBt()
         
         answerButtons.forEach({
-            $0.setTitle(quizBrain.getQuestionAnswers()[Int($0.tag)]?.answer, for: .normal)
+            $0.labelRight.text = quizBrain.getQuestionAnswers()[Int($0.tag)]?.answer
             $0.isEnabled = true
             $0.backgroundColor = UIColor.clear
             $0.yellowLayer.isHidden = true
             $0.redLayer.isHidden = true
             $0.greenLayer.isHidden = true
+            $0.layer.shadowColor = UIColor.gray.cgColor
+
         })
     }
     

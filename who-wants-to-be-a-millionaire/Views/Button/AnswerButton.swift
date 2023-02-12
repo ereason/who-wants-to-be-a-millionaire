@@ -70,9 +70,9 @@ class AnswerButton: UIButton {
     }
     
     private func setupShadow() {
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.5
-        layer.shadowRadius = 6
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOpacity = 0.8
+        layer.shadowRadius = 8
         layer.shadowOffset = CGSize(width: 0.0 , height: 6.0)
         clipsToBounds = true
         layer.masksToBounds = false
