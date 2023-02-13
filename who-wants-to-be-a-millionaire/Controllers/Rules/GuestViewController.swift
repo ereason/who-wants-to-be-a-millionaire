@@ -7,7 +7,10 @@ class GuestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    @IBAction func onBackgroundTapped(_ sender: UITapGestureRecognizer) {
+        UIApplication.shared.endEditing()
+    }
+    
     @IBAction func startQuiz(_ sender: Any) {
         let controller = QuizViewController(nibName: "QuizViewController", bundle: nil)
         controller.modalPresentationStyle = .fullScreen
@@ -22,4 +25,10 @@ class GuestViewController: UIViewController {
         self.navigationController?.popViewController(animated:false)
     }
     
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
